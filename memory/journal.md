@@ -144,3 +144,41 @@ ses fines après dilution. D'où le lot **E-C** (carrier enrichi à ≈ 33 % de 
 **Nouvelles questions** : Q16 (ratio SV003:ML001 du BUD mono — bloque le pesage de l'étage 1),
 Q17 (masse et RSD des mono-produits), **Q18 (taille de lot et cuve des mono-produits — peut
 départager les causes 3.1 et 5.3 sans consommer un gramme d'API)**.
+
+---
+
+## 2026-09-13 — Session 6 : les données de production éliminent une hypothèse
+
+**Informations reçues** : ratio budésonide mono **≈ 50:50 SV003/ML001** (à confirmer) ·
+**masse de remplissage 25 mg pour tous les produits** · **taille de lot 9 kg pour les deux
+mono-produits** · consigne explicite de ne plus traiter la cuve et l'échelle comme des causes.
+
+**Correction majeure — l'hypothèse « taux de remplissage » est retirée (ADR-017).**
+`calcul interne` : le formotérol mono, sur ML001 pur (570 g/L), occupe **78,9 %** de la cuve de
+20 L à 9 kg — et il est fabriqué en routine avec succès. Le budésonide mono est à **75,2 %**.
+Un actif à 0,048 % m/m est donc distribué de façon homogène dans 9 kg à 79 % de remplissage.
+La guidance générique du constructeur (P16) ne résiste pas aux données du site. **Q18, posée
+précisément pour ce test, a tranché.**
+
+**Éliminées avec elle** : taille de lot de 9 kg, faible dose en elle-même, énergie et temps de
+mélange, les trois tamisages, et l'objection « ML001 ne coule pas assez au dosator » — le
+formotérol mono est rempli à 25 mg sur ML001 pur.
+
+**Le diagnostic se réduit à deux causes** : co-agglomération BUD–FOR (33:1 en masse) et perte de
+l'environnement de fines du formotérol (100 % → ≈ 52 % de ML001).
+
+**Le plan se réduit en conséquence (ADR-019)** : trois lots de 1 kg (E-A co-sandwich/carrier BUD,
+E-B double prémix/carrier BUD, E-C double prémix/carrier FOR 100 % ML001), puis **confirmation
+directe à 9 kg**. L'étage 6 kg est supprimé, l'étage 3 kg devient facultatif.
+Les niveaux de carrier sont **50 % et 100 %** (ADR-018) : les deux seuls points de l'espace dont
+on sache en interne qu'ils fonctionnent. En cas d'arbitrage, **c'est au budésonide de s'adapter** —
+à 1,600 % m/m il est 33 fois plus tolérant que le formotérol.
+
+**Documents révisés** : `RAPPORT.md` (§A.2d, §A.3, §J), `docs/05-arbre-causes.md`,
+`docs/11-petites-echelles.md` (réécrit, version 2), bandeau de révision sur `docs/10`.
+`CLAUDE.md` porte désormais la consigne : **ne jamais ressortir l'hypothèse du taux de remplissage**.
+
+**Questions fermées** : Q17 (25 mg pour tous), Q18 (9 kg pour les deux).
+**Nouvelle question Q19, coût nul et très haute valeur** : le combiné historique était-il sur le
+carrier du budésonide ou sur celui du formotérol ? Si c'était sur celui du budésonide, la cause
+5.3 devient l'explication la plus simple de tout l'échec historique.

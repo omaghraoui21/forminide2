@@ -11,19 +11,27 @@ Le « code » est du raisonnement pharmaceutique traçable. Ces règles sont con
   Ratio BUD:FOR = **16,7:1** ou **33,3:1**.
 - **APIs** : achetés micronisés. Pas de jet milling, pas de co-micronisation, pas de spray drying.
 - **Lactoses disponibles** : Respitose® **ML001**, **SV003**, **SV010** (DFE Pharma).
-- **Carriers des mono-produits existants** (information interne, 2026-09-13) :
-  **formotérol → ML001 seul** · **budésonide → mélange SV003 + ML001**.
-  Conséquence : le prémix formotérol se fait **sur ML001** (ADR-015), et le **taux de ML001 du
-  bulk combiné** est une variable d'essai de premier rang, pas un paramètre hérité du budésonide.
+- **Mono-produits existants** (information interne, 2026-09-13) — **fabriqués en routine à 9 kg,
+  25 mg par gélule, sur les mêmes équipements** :
+  **formotérol → ML001 seul** · **budésonide → SV003 + ML001 ≈ 50:50** *(ratio à confirmer)*.
+  Conséquences : (a) le prémix formotérol se fait **sur ML001** (ADR-015) ; (b) le **taux de ML001
+  du bulk combiné** est une variable d'essai de premier rang (ADR-018) ; (c) **l'hypothèse
+  « taux de remplissage de la cuve » est ÉLIMINÉE** — `calcul interne` : le formotérol mono tourne
+  à **78,9 % de remplissage** et fonctionne (ADR-017). **Ne jamais la ressortir.**
+- **Le site maîtrise le 9 kg.** Les échecs historiques étaient des échecs de développement
+  initiaux, pas une limite d'équipement. Ne pas traiter l'échelle, la cuve, le tamisage ou les
+  temps de mélange comme des causes : ils sont validés par la production courante.
+- **Diagnostic réduit à deux causes** : (1) co-agglomération BUD–FOR dans le sandwich commun
+  (33:1 en masse) ; (2) perte de l'environnement de fines du formotérol (100 % → ≈ 50 % de ML001).
 - **Équipements** : mélangeur **Inversina ≈ 20 L** (jusqu'à ~9 kg), tamiseur **Russell 250 µm**,
   remplisseuse **Harro Höfliger Modu-C MS**, dispositif **type Aerolizer** disponible.
 - **Historique** : procédé mono-produit robuste à 3, 6 et 9 kg (dilution séquentielle en
   3 fractions, sandwich lactose/API/lactose, tamisage, Inversina 15 min par étape).
   Le **combiné BUD/FOR développé directement à 9 kg a échoué** ; l'équipe historique a
   séparé les deux formulations. Cause exacte non documentée → c'est la question centrale.
-- **Diagnostic retenu** (voir `RAPPORT.md` §A) : co-agglomération API–API dans le sandwich
-  commun + la dernière dilution (la plus difficile) exécutée au taux de remplissage le plus
-  défavorable du mélangeur.
+- **Diagnostic retenu** (voir `RAPPORT.md` §A) : co-agglomération API–API dans le sandwich commun,
+  et perte de l'environnement de fines du formotérol lorsque le combiné hérite du carrier du
+  budésonide.
 
 ## 2. Règles de véracité — non négociables
 

@@ -157,7 +157,7 @@ en la citant.
 
 ## ADR-014 — Le taux de remplissage cible est celui du constructeur, pas une estimation
 
-- **Date** : 2026-09-13 (session 3) · **Statut** : ACTIVE
+- **Date** : 2026-09-13 (session 3) · **Statut** : ⛔ **RETIRÉE par ADR-017**
 - **Décision** : viser **≈ 50 % de remplissage** du mélangeur pour le bulk (poudre sèche lourde),
   conformément à la guidance Bioengineering, et traiter tout dépassement comme un risque documenté.
 - **Raison** : `INFÉRENCE HAUTE CONFIANCE` — la guidance constructeur (≈ 2/3 pour une poudre
@@ -210,3 +210,55 @@ en la citant.
 - **Conséquence** : un étage de 1 kg n'a aucune valeur de procédé ; il ne sert qu'à trancher la
   formulation. C'est explicite dans `11-petites-echelles.md`.
 - **Réversibilité** : totale.
+
+## ADR-017 — L'hypothèse « taux de remplissage » est retirée *(retire ADR-014)*
+
+- **Date** : 2026-09-13 (session 6) · **Statut** : ACTIVE
+- **Contexte** : ADR-014 fixait une cible de remplissage de ≈ 50 % d'après la guidance générique
+  du constructeur, et la cause 3.1 de l'arbre des causes en découlait.
+- **Donnée qui la renverse** : `FAIT INTERNE CONFIRMÉ` — les **deux mono-produits sont fabriqués
+  en routine à 9 kg**, à 25 mg de masse de remplissage. `calcul interne` : formotérol mono sur
+  **ML001 seul** → 570 g/L → **78,9 % de remplissage** ; budésonide mono sur **SV003/ML001 50:50**
+  → 598 g/L → **75,2 %**. **Un actif à 0,048 % m/m est donc distribué de façon homogène dans 9 kg
+  à 79 % de remplissage, en routine.**
+- **Décision** : retirer la cause 3.1 du diagnostic, rétrograder 3.2 et 3.3 en PEU PROBABLE,
+  cesser de traiter le 9 kg comme une échelle à risque et supprimer l'étage 6 kg du plan.
+- **Conséquence** : le diagnostic se réduit à **deux causes** — co-agglomération BUD–FOR (1.1) et
+  perte de l'environnement de fines du formotérol (5.3). Elles se séparent en **trois lots**.
+- **Leçon de méthode** : une guidance générique de constructeur ne vaut pas les données de
+  production du site. La question Q18 avait été posée précisément pour ce test ; elle a tranché.
+- **Réversibilité** : sans objet (constat).
+
+## ADR-018 — Le carrier du bulk combiné est une variable d'essai à deux niveaux : 50 % et 100 % de ML001
+
+- **Date** : 2026-09-13 (session 6) · **Statut** : ACTIVE
+- **Contexte** : le formotérol mono est sur **100 % ML001**, le budésonide mono sur **≈ 50 %**
+  (ratio à confirmer). Le combiné doit choisir.
+- **Décision** : tester deux niveaux — **le carrier du budésonide (≈ 50 % ML001)** et **celui du
+  formotérol (100 % ML001)** — plutôt qu'un niveau intermédiaire arbitraire.
+- **Raison** : ce sont les deux seuls points de l'espace dont on sache, en interne, qu'ils
+  fonctionnent — chacun pour un API. Tester entre les deux, c'est tester un point inconnu ;
+  tester les deux bornes, c'est mesurer une pente entre deux points connus.
+  Argument supplémentaire : à 1,600 % m/m le budésonide est **33 fois plus tolérant** que le
+  formotérol à 0,048 %. En cas d'arbitrage, **c'est au budésonide de s'adapter**, pas au formotérol.
+- **Conséquence** : `calcul interne` — à 9 kg et 12/400, le carrier à 100 % ML001 donne
+  **8 851,7 g de ML001 et 0 g de SV003** ; le carrier du BUD donne **4 639,7 g de ML001 et
+  4 212,0 g de SV003**. Le prémix FOR (432,0 g, dont 427,7 g de ML001) est dans les deux cas
+  prélevé sur le ML001 du lot.
+- **Objection levée d'avance** : l'écoulement au dosator d'un carrier 100 % ML001 n'est pas un
+  risque théorique — **le formotérol mono est déjà rempli à 25 mg sur ML001 pur**.
+- **Réversibilité** : totale.
+
+## ADR-019 — Le plan se réduit à trois lots de screening puis une confirmation à 9 kg
+
+- **Date** : 2026-09-13 (session 6) · **Statut** : ACTIVE · **révise ADR-016 et ADR-006**
+- **Décision** : **E-A / E-B / E-C à 1 kg**, puis **confirmation directe à 9 kg** de l'architecture
+  gagnante. L'étage **6 kg est supprimé** ; l'étage 3 kg devient **facultatif**.
+- **Raison** : l'échelle n'étant plus un facteur de risque (ADR-017), l'étage 1 kg ne se justifie
+  plus par la représentativité mécanique mais par **l'économie d'API** — trois lots pour 1,44 g de
+  formotérol, le coût d'un seul lot de 3 kg — et la confirmation se fait directement à l'échelle
+  de production, que le site maîtrise.
+- **Limite explicite** : un lot de 1 kg **trie des formulations, il ne qualifie pas un procédé**.
+  Aucune conclusion de procédé ne sera tirée de l'étage 1 kg.
+- **Réversibilité** : totale ; l'étage 3 kg peut être réintroduit si l'on veut une confirmation
+  intermédiaire avant d'engager 9 kg de matière.

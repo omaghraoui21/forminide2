@@ -18,8 +18,8 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 │   └── 2.3 Adhésion préférentielle (CAB) défavorable au BUD ......... PLAUSIBLE
 │
 ├── 3. PROCÉDÉ / MÉCANIQUE
-│   ├── 3.1 Taux de remplissage 71–79 % à l'étape finale ............. TRÈS PLAUSIBLE
-│   ├── 3.2 Sous-mélange à l'étape 3 ................................. PLAUSIBLE
+│   ├── 3.1 Taux de remplissage 71–79 % à l'étape finale ............. ⛔ ÉLIMINÉE (2026-09-13)
+│   ├── 3.2 Sous-mélange à l'étape 3 ................................. PEU PROBABLE
 │   ├── 3.3 Sur-mélange cumulé (3 × 15 min = press-on) ............... PLAUSIBLE
 │   ├── 3.4 Répartition 3:3:3 non optimale ........................... PLAUSIBLE
 │   └── 3.5 Tamisage destructeur / reclassement granulométrique ...... PLAUSIBLE
@@ -34,11 +34,44 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 │   ├── 5.1 Ratio fines/grossier inadapté au dual-API ................ PLAUSIBLE
 │   ├── 5.2 Grade de lactose inadapté au dual-API .................... PEU PROBABLE
 │   └── 5.3 Carrier du combiné hérité du budésonide : le formotérol
-│           perd les fines dont dépend son mono-produit .............. TRÈS PLAUSIBLE
+│           passe de 100 % à ~50 % de ML001 ...................... ★ TRÈS PLAUSIBLE
 │
 └── 6. MESURE
     └── 6.1 Prise d'essai trop grosse (~1 g au lieu de 25 mg) ........ DONNÉES INSUFFISANTES
              (si confirmée, elle invalide aussi les "succès" mono-produits)
+```
+
+---
+
+## ⛔ Causes éliminées par les données de production (2026-09-13)
+
+`FAIT INTERNE CONFIRMÉ` — Les **deux mono-produits sont fabriqués en routine à 9 kg**, masse de
+remplissage **25 mg**, sur les mêmes équipements. Le formotérol mono est sur **ML001 seul**
+(densité versée 570 g/L → **78,9 % de remplissage**), le budésonide mono sur **SV003/ML001 50:50**
+(598 g/L → **75,2 %**).
+
+Un actif à **0,048 % m/m** est donc distribué de façon homogène dans **9 kg**, à **79 % de
+remplissage**, en routine. Cela élimine d'un coup :
+
+| Cause | Pourquoi elle tombe |
+|---|---|
+| **3.1 — taux de remplissage** | 79 % est la condition de fabrication **normale** du formotérol mono, et elle fonctionne. L'argument tiré de la guidance générique du constructeur ne résiste pas aux données du site |
+| **1.4 — statistique du mélange** | déjà écartée par le calcul, et confirmée par la pratique |
+| **3.2 — sous-mélange** · **3.3 — sur-mélange** | mêmes temps, mêmes révolutions, mêmes trois tamisages sur les mono-produits qui réussissent → rétrogradées en PEU PROBABLE |
+| **taille de lot de 9 kg** | c'est l'échelle de production courante des deux mono-produits |
+| **écoulement d'un carrier riche en ML001 au dosator** | le formotérol mono est rempli à 25 mg sur **ML001pur** — l'objection « ML001 ne coule pas assez » est empiriquement fausse |
+
+**Ce qui reste après élimination — deux causes, et elles se testent en trois lots :**
+
+| # | Cause restante | Différence avec le mono-produit qui marche |
+|---|---|---|
+| **1.1** | **Co-agglomération BUD–FOR** | 144 g de budésonide arrivent dans le même sandwich, soit **33 × la masse du formotérol** |
+| **5.3** | **Perte de l'environnement de fines** | le carrier passe de **100 % à ≈ 50 % de ML001** si le combiné hérite du système du budésonide |
+
+```
+E-A  co-sandwich   · carrier BUD  (50 % ML001)   ← reproduit la tentative historique
+E-B  double prémix · carrier BUD  (50 % ML001)   ← E-A vs E-B = effet ARCHITECTURE
+E-C  double prémix · carrier FOR (100 % ML001)   ← E-B vs E-C = effet CARRIER
 ```
 
 ---
@@ -54,7 +87,7 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 | **2.1** | **Compétition de sites actifs** : le BUD sature les sites de haute énergie par effet de masse | **PLAUSIBLE** (et **favorable** au FOR si elle a lieu sur le carrier) | mécanisme reconnu des composants ternaires ; sur le produit brésilien, FPF FOR (56 %) > FPF FOR en capsule séparée (52 %) | **E3 vs L3** : inverser l'ordre d'arrivée des APIs sur le carrier | 1 lot |
 | **2.2** | Déplacement d'un API par l'autre pendant le mélange prolongé | **DONNÉES INSUFFISANTES** | aucune donnée publique sur BUD/FOR | **cinétique embarquée dans E3** : si l'assay d'un API dérive entre 5 et 25 min alors que l'autre est stable | 4 × 10 analyses |
 | **2.3** | Adhésion préférentielle défavorable (le BUD préfère le BUD au lactose) | **PLAUSIBLE** | CAB budésonide 0,62, actif plutôt cohésif | **E3 Gate 4** : si FPD BUD faible avec MMAD élevé → dépôt en agglomérats | NGI déjà prévu |
-| **3.1** | **Taux de remplissage de 71 % (79 % avec ML001) à l'étape la plus difficile** | **TRÈS PLAUSIBLE** | `calcul interne` sur densités versées DFE ; la route « 3 sous-lots » ne mettait jamais le travail difficile à haute charge | **E4** : même architecture à 6 kg (48 %) puis 9 kg (71 %). Si 6 kg passe et 9 kg échoue, la cause est établie | 2 lots |
+| **3.1** | ~~Taux de remplissage à l'étape la plus difficile~~ | **⛔ ÉLIMINÉE** | les deux mono-produits sont fabriqués en routine à 9 kg, à **75–79 % de remplissage**, avec succès. Le formotérol mono, à 0,048 % m/m sur ML001 pur, est le contre-exemple direct | aucun essai nécessaire — la production courante fait foi | 0 |
 | **3.2** | Sous-mélange à l'étape 3 | **PLAUSIBLE** | conséquence directe de 3.1 | **cinétique embarquée** à l'étape 3 : si le RSD s'améliore encore entre 15 et 25 min, il y avait sous-mélange | 10 analyses |
 | **3.3** | Sur-mélange cumulé (press-on forces) | **PLAUSIBLE** | l'essentiel de l'évolution se joue dans les 120 premières min ; press-on dominant sur 0–60 min ; 15 min = optimum publié en tumbler | **même cinétique** : NGI à 15 et 25 min ; si FPD(25) < FPD(15) à RSD constant → sur-mélange | 2 NGI |
 | **3.4** | Répartition 3:3:3 non optimale | **PLAUSIBLE** | EP3175842A1 : AV de 7,1 (7:2:1) à 12,5 (5:1:4) à actif constant | **E2 (3:3:3) vs E3 (7:2:1)** — déjà dans le plan | 0 (inclus) |
@@ -64,7 +97,7 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 | **4.3** | Variation d'humidité | **DONNÉES INSUFFISANTES** | aucun enregistrement historique | **enregistreur HR/T** en salle, dès maintenant, sur tous les lots | coût d'un capteur |
 | **4.4** | Ségrégation au transfert/stockage | **PLAUSIBLE** | mélange ordonné = résistant, sauf fines libres | **Gate 2** : test de ségrégation par vibration + assay FOR par fraction granulométrique | inclus |
 | **5.1** | Ratio fines/grossier inadapté | **PLAUSIBLE** | SV003 et SV010 n'ont presque pas de fines < 10 µm ; la fenêtre publiée utile est 4–15 % | **L4** : SV003 + 8 % ML001, uniquement si CU bonne et FPD faible | 1 lot conditionnel |
-| **5.3** | **Le carrier du combiné a été hérité du budésonide.** Le mono-produit formotérol utilise **ML001 seul** ; le mono-produit budésonide utilise **SV003 + ML001**. Si le combiné a été fait sur le carrier du BUD, le formotérol a perdu l'environnement de fines dont dépend son propre mono-produit | **TRÈS PLAUSIBLE** | information interne (2026-09-13) ; ML001 est le seul des trois grades à posséder une vraie population fine (D10 3–7 µm) | **E-B vs E-C** à 1 kg : même architecture, taux de ML001 différent (≈ 14 % contre ≈ 33 %) | 2 lots de 1 kg, 0,96 g de FOR |
+| **5.3 ★** | **Le carrier du combiné a été hérité du budésonide.** Le mono-produit formotérol utilise **ML001 seul** ; le mono-produit budésonide utilise **SV003 + ML001**. Si le combiné a été fait sur le carrier du BUD, le formotérol a perdu l'environnement de fines dont dépend son propre mono-produit | **TRÈS PLAUSIBLE** | information interne (2026-09-13) ; ML001 est le seul des trois grades à posséder une vraie population fine (D10 3–7 µm) | **E-B vs E-C** à 1 kg : même architecture, taux de ML001 différent (≈ 14 % contre ≈ 33 %) | 2 lots de 1 kg, 0,96 g de FOR |
 | **5.2** | Grade de lactose inadapté au dual-API | **PEU PROBABLE** | SV003 est le carrier grossier des exemples BUD/FOR publiés ; le même grade fonctionne en mono-produit chez nous | **L5**, en dernier | 1 lot conditionnel |
 | **6.1** | **Prise d'essai historique trop grosse** | **DONNÉES INSUFFISANTES — priorité d'investigation n°1** | un RSD mesuré sur 1 g masque mathématiquement l'hétérogénéité à 25 mg | **question Q4** : consulter les protocoles d'analyse historiques. **Coût : zéro, délai : une journée** | 0 |
 

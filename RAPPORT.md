@@ -134,52 +134,72 @@ Et dans l'autre sens :
 jamais d'origine statistique.** C'est une information de diagnostic très forte — et elle dit que
 le problème se joue entre 20 et 80 µm, très en dessous de la maille de 250 µm.
 
-**(d) La dernière dilution est faite au pire moment mécanique.**
-`calcul interne` à partir des densités versées DFE `FAIT CONFIRMÉ` :
+**(d) Le carrier du formotérol change radicalement.**
+`FAIT INTERNE CONFIRMÉ` (2026-09-13) — Le **mono-produit formotérol est fabriqué sur ML001 seul**.
+Le **mono-produit budésonide est fabriqué sur un mélange SV003 + ML001 ≈ 50:50**. Si le combiné
+est construit sur le carrier du budésonide, **le formotérol passe de 100 % à environ 50 % de
+ML001** : il perd la moitié de l'environnement de fines dont dépend son propre produit.
 
-| Étape du procédé 9 kg | Masse | Volume (SV003, 630 g/L) | Remplissage de 20 L |
+ML001 est le seul des trois grades à posséder une vraie population fine (D10 = 3–7 µm) et le plus
+cohésif (Carr > 25 %). Pour un actif à 0,048 % m/m, cette population n'est pas un détail de
+formulation : c'est ce qui fournit les sites d'adhésion et l'environnement de co-agglomération
+favorable.
+
+**(e) Ce qui est désormais écarté — et c'est l'essentiel.**
+`FAIT INTERNE CONFIRMÉ` — Les **deux mono-produits sont fabriqués en routine à 9 kg**, à 25 mg
+de masse de remplissage, sur les mêmes équipements. `calcul interne` :
+
+| Produit fabriqué en routine | Carrier | Densité versée | Remplissage de l'Inversina 20 L |
 |---|---|---|---|
-| 1re fraction | 3 kg | 4,8 L | **24 %** |
-| après 2e ajout | 6 kg | 9,5 L | 48 % |
-| **après 3e ajout** | **9 kg** | **14,3 L** | **71 %** |
+| **Formotérol mono, 12 µg** | ML001 seul | 570 g/L | **78,9 %** |
+| **Budésonide mono** | SV003/ML001 50:50 | 598 g/L | **75,2 %** |
 
-Avec ML001 (densité versée 570 g/L), 9 kg occupent **15,8 L → 79 %**. Avec SV010 (690 g/L),
-13,0 L → 65 %.
+> **Un actif à 0,048 % m/m est distribué de façon homogène dans 9 kg, à 79 % de remplissage, en
+> routine.** L'hypothèse d'un taux de remplissage limitant — que j'avais classée « très
+> plausible » sur la base de la guidance générique du constructeur — est **réfutée par les données
+> de production du site**. Elle est retirée du diagnostic (ADR-017).
 
-`INFÉRENCE HAUTE CONFIANCE` — Dans un mélangeur à retournement, l'efficacité du mélange chute
-quand le taux de remplissage augmente : la couche cascadante libre se réduit, la mobilité des
-particules à travers le plan de symétrie diminue, le temps de mélange augmente. Le procédé 9 kg
-demande donc le travail le plus difficile (répartir 4,32 g de formotérol dans 9 kg) à l'étape la
-moins capable.
+Sont écartés en même temps, par la même donnée :
+la faible dose en elle-même · la taille de lot de 9 kg · le nombre de révolutions · les 15 min par
+étape · les trois tamisages au Russell · l'écoulement au dosator d'un carrier riche en ML001
+(le formotérol mono est rempli à 25 mg sur du ML001 pur). **Tous ces éléments sont validés par la
+production courante.**
 
-**Et ce n'est pas qu'un raisonnement** : la guidance du constructeur de l'Inversina préconise de
-remplir à **≈ 50 % du volume pour une poudre sèche lourde** (≈ 2/3 pour une poudre légère) — le
-lactose d'inhalation, à 570–690 g/L, est une poudre lourde. `INFÉRENCE HAUTE CONFIANCE`
-**Le lot de 9 kg travaille donc nettement au-dessus de la plage recommandée (71 %, 79 % avec du
-ML001), tandis que le lot de 6 kg tombe exactement dessus (48 %).**
+### A.3 Diagnostic consolidé — le problème s'est réduit à deux variables
 
-**C'est le point qui explique le contraste observé** : la route « trois sous-lots de 3 kg »
-faisait toujours le travail difficile à 24 % de remplissage et ne réservait à la haute charge
-qu'une simple combinaison de mélanges déjà homogènes. La route 9 kg directe a inversé cet ordre.
+Entre le **formotérol mono qui fonctionne** et le **combiné qui a échoué**, il ne reste, une fois
+les causes de procédé écartées par les données de production, que **deux différences** :
 
-### A.3 Diagnostic consolidé
+| # | Différence | Mécanisme | Classement |
+|---|---|---|---|
+| **1** | **144 g de budésonide arrivent dans le même sandwich**, soit **33 fois la masse du formotérol** | co-agglomération API–API : le formotérol devient un passager des agglomérats de budésonide, et sa distribution cesse d'être gouvernée par le lactose | **TRÈS PLAUSIBLE** |
+| **2** | **Le carrier passe de 100 % ML001 à ≈ 50 %** si le combiné hérite du système du budésonide | le formotérol perd la moitié de son environnement de fines — sites d'adhésion et co-agglomérats favorables | **TRÈS PLAUSIBLE** |
 
-> Le combiné 9 kg a probablement échoué par **cumul** de trois effets, aucun n'étant suffisant
-> seul :
-> 1. **co-agglomération BUD–FOR** dans le sandwich commun (le formotérol devient un passager) ;
-> 2. **inefficacité du tamis 250 µm sur ce mécanisme** (les entités critiques font 20–80 µm) ;
-> 3. **la dilution finale exécutée à 65–79 % de remplissage**, là où le mélangeur est le moins
->    efficace.
->
-> S'y ajoute, non démontrée mais probable, une **quatrième cause de mesure** : si l'homogénéité
-> historique a été jugée sur des prises d'essai de l'ordre du gramme et non de 25 mg, le RSD
-> rapporté n'a aucun rapport avec l'uniformité de dose réelle. Voir `memory/questions-ouvertes.md` Q4.
+Ces deux causes sont **indépendantes et cumulables**. Elles se séparent par **trois lots** :
 
-**Ce que ce diagnostic implique** : la correction ne passe **ni** par un nouveau lactose,
-**ni** par un nouvel équipement, **ni** par un excipient supplémentaire. Elle passe par
-**l'ordre d'incorporation et la répartition du lactose**.
+```
+E-A  co-sandwich  · carrier du BUD (50 % ML001)   ← reproduit la tentative historique
+E-B  double prémix · carrier du BUD (50 % ML001)  ← E-A vs E-B = effet ARCHITECTURE
+E-C  double prémix · carrier du FOR (100 % ML001) ← E-B vs E-C = effet CARRIER
+```
 
----
+**Ce que le tamis ne pourra jamais corriger** `calcul interne` : un agglomérat de 250 µm porte
+27 à 41 % d'une dose de formotérol, et un RSD de 10 % correspond à des entités effectives de
+**≈ 56 µm** — très en dessous de la maille. Seules la prévention de leur formation (prémix,
+séparation des APIs) et leur érosion par le mélange les suppriment.
+
+**Ce que la statistique dit** `calcul interne` : en particules primaires de 2,5 µm, une dose de
+12 µg en contient 1,13 million et le RSD statistique minimal serait de **0,09 %**. Tout RSD
+mesuré au-dessus de ~1 % est d'origine agglomérat ou ségrégation — jamais « parce que la dose est
+faible ». Le mono-produit formotérol le démontre d'ailleurs en pratique.
+
+**Reste une question de mesure, non résolue** : si l'homogénéité historique a été jugée sur des
+prises d'essai de l'ordre du gramme et non de 25 mg, le RSD rapporté n'a aucun rapport avec
+l'uniformité de dose réelle (`memory/questions-ouvertes.md` Q4).
+
+**Ce que ce diagnostic implique** : la correction ne passe **ni** par un nouvel équipement,
+**ni** par une nouvelle taille de lot, **ni** par un excipient supplémentaire. Elle passe par
+**l'ordre d'incorporation** et par **le choix du carrier du bulk combiné**.
 
 ## B. Reverse engineering mondial — produits commercialisés
 
@@ -611,40 +631,28 @@ un lot.
 
 ## J. Taille de lot — 3 kg, 6 kg ou 9 kg ?
 
-`calcul interne` (densités versées DFE) :
+**Révision du 2026-09-13.** Cette section disait qu'il fallait se méfier du 9 kg à cause du taux
+de remplissage. Cet argument est caduc : **les deux mono-produits sont fabriqués en routine à
+9 kg**, à 75–79 % de remplissage, avec succès. Le site maîtrise cette échelle.
 
-| Masse | SV003 (630 g/L) | SV010 (690 g/L) | ML001 (570 g/L) |
-|---|---|---|---|
-| 3 kg | 4,8 L → **24 %** | 4,3 L → 22 % | 5,3 L → 26 % |
-| 6 kg | 9,5 L → **48 %** | 8,7 L → 43 % | 10,5 L → 53 % |
-| 9 kg | 14,3 L → **71 %** | 13,0 L → 65 % | 15,8 L → **79 %** |
+| Masse | Remplissage (bulk ≈ 600 g/L) | Statut |
+|---|---|---|
+| 1 kg | 8 % | utile pour **trier des formulations** à faible coût d'API, sans valeur de procédé |
+| 3 kg | 25 % | échelle de screening confortable |
+| 6 kg | 50 % | intermédiaire — **plus nécessaire** |
+| **9 kg** | **75–79 %** | **échelle de production maîtrisée, pour les deux mono-produits** |
 
-**Conclusion en trois points :**
+**Conséquence pratique — le plan se raccourcit :**
+1. **Étage 1 kg** — trois lots (E-A, E-B, E-C) pour **1,44 g de formotérol au total**, afin de
+   séparer l'effet architecture de l'effet carrier. Sa justification n'est plus la
+   représentativité mécanique : c'est **l'économie d'API et la vitesse de tri**.
+2. **Étage 9 kg** — confirmation directe de l'architecture gagnante **à l'échelle de production**.
+   L'étage 6 kg peut être supprimé.
+3. **3 kg** reste disponible comme étage intermédiaire si l'on veut une confirmation avant
+   d'engager 9 kg de matière, mais il n'est plus obligatoire.
 
-1. **3 kg est la bonne échelle de screening d'architecture** — procédé connu, consommation d'API
-   faible (1,44 g FOR + 48 g BUD par lot), et surtout **les variables testées (ordre, prémix,
-   carrier) sont indépendantes de l'échelle**.
-2. **3 kg n'est PAS représentatif de la mécanique de mélange à 9 kg** (24 % contre 71 % de
-   remplissage). Il ne faut donc **jamais** conclure « ça marche » à partir de 3 kg seuls, ni
-   conclure « ça ne marche pas » à 9 kg sans avoir regardé le remplissage.
-3. **6 kg est la taille la plus intéressante industriellement** — et ce n'est pas un avis :
-   la guidance du constructeur de l'Inversina préconise **≈ 50 % de remplissage pour une poudre
-   sèche lourde**, ce que le lot de 6 kg réalise exactement (48 %), alors que le 9 kg est à 71 %.
-   `INFÉRENCE HAUTE CONFIANCE` (fiche primaire à récupérer en interne — Q5).
-   `RECOMMANDATION` : si le 9 kg reste marginal après correction de la répartition, **figer la
-   taille industrielle à 6 kg** plutôt que de dégrader la formule — la perte de productivité est
-   très inférieure au coût d'un problème d'uniformité récurrent.
-
-⚠️ **Ne pas descendre sous 3 kg** pour un lot d'architecture. En revanche, le **prémix** (L0)
-est fait à sa taille réelle (144–432 g) : ce n'est pas une réduction d'échelle, c'est l'étape
-elle-même.
-
-**Astuce de représentativité** `RECOMMANDATION` : si l'Inversina accepte des **cuves
-interchangeables**, faire le screening 3 kg dans une cuve de **6–8 L** (→ 60–80 % de remplissage)
-reproduit la mécanique du 9 kg pour un sixième de l'API. À vérifier auprès du fournisseur
-(question Q5).
-
----
+> **Ne pas conclure d'un lot de 1 kg qu'un procédé fonctionne.** Un lot de 1 kg trie des
+> formulations ; il ne qualifie pas un procédé. La qualification se fait à 9 kg, l'échelle réelle.
 
 ## K. Procédé proposé — étape par étape (architecture B, lot 9 kg, dosage 12/400)
 

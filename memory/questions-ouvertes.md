@@ -32,6 +32,13 @@ formotérol) et **Q11** (méthode), indispensables avant toute pesée et tout do
 
 | # | Question | Bloque | Propriétaire | Criticité | Statut |
 |---|---|---|---|---|---|
-| **Q16** | **Quel est le ratio SV003 : ML001 du mono-produit budésonide ?** | les masses des lots E-A et E-B, et le contraste avec E-C : à 90:10 le ML001 total du combiné vaut ≈ 14 %, à 80:20 il vaut ≈ 24 % et le contraste avec E-C (33 %) s'affaiblit | R&D / production | **haute — bloque le pesage de l'étage 1** | ⬜ |
-| **Q17** | **Masse de remplissage des deux mono-produits** (25 mg ?) et **RSD d'uniformité atteint** | le repère interne : si le formotérol mono est à 3 %, le combiné doit viser 3 %, pas 5 % | R&D / AQ | **haute** | ⬜ |
-| **Q18** | **À quelle taille de lot et dans quelle cuve les deux mono-produits sont-ils fabriqués ?** | **peut départager deux causes de l'échec historique sans consommer un gramme d'API** : si le formotérol mono est fabriqué à 9 kg en ML001 pur (79 % de remplissage) et qu'il fonctionne, la cause « taux de remplissage » perd du poids et la cause « carrier » en gagne | Production | **très haute** | ⬜ |
+| **Q16** | Ratio SV003 : ML001 du mono-produit budésonide | les masses de E-A et E-B | R&D / production | haute | 🟡 **≈ 50:50** annoncé le 2026-09-13, **à confirmer au bureau**. Les masses de E-A/E-B sont calculées sur cette base et devront être refaites si le ratio réel diffère |
+| **Q17** | Masse de remplissage des mono-produits | — | — | — | ✅ **FERMÉE 2026-09-13 : 25 mg pour tous les produits.** Le **RSD d'uniformité atteint** par chaque mono-produit reste à obtenir (voir Q17b) |
+| **Q17b** | **Quel RSD d'uniformité de teneur atteignent les deux mono-produits à 9 kg ?** | le repère interne : si le formotérol mono est à 2 %, le combiné doit viser 2 %, pas 5 % | R&D / AQ | **haute** | ⬜ |
+| **Q18** | Taille de lot et cuve des mono-produits | — | — | — | ✅ **FERMÉE 2026-09-13 : 9 kg pour les deux.** Conséquence : `calcul interne` 78,9 % de remplissage pour le formotérol mono (ML001 pur) et 75,2 % pour le budésonide mono → **la cause « taux de remplissage » est éliminée** (ADR-017) et la cause « carrier » (5.3) devient prioritaire |
+
+## Question ajoutée le 2026-09-13 (session 6)
+
+| # | Question | Bloque | Propriétaire | Criticité | Statut |
+|---|---|---|---|---|---|
+| **Q19** | **Le combiné historique a-t-il été fabriqué sur le carrier du budésonide (≈ 50 % ML001) ou sur celui du formotérol (100 %) ?** | c'est la **confirmation directe ou la réfutation de la cause 5.3**. Si le combiné a été fait à 50 % de ML001, l'hypothèse « le formotérol a perdu ses fines » devient l'explication la plus simple de tout l'échec historique | R&D / archives | **très haute — coût nul** | ⬜ |

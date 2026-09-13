@@ -1,5 +1,13 @@
 # Marche à suivre — étape par étape
 
+> ⚠️ **RÉVISION DU 2026-09-13 — lire d'abord `11-petites-echelles.md` (version 2).**
+> Les données de production reçues (mono-produits fabriqués en routine **à 9 kg**, formotérol sur
+> **ML001 seul**, budésonide sur **SV003/ML001 ≈ 50:50**, 25 mg pour tous) **éliminent
+> l'hypothèse du taux de remplissage** et raccourcissent le plan :
+> **trois lots de 1 kg (E-A, E-B, E-C) puis confirmation directe à 9 kg.**
+> Les étages 3 kg et 6 kg ne sont plus obligatoires. Les règles, la semaine 0 et les gates
+> ci-dessous restent valables tels quels.
+
 > Ce document dit **quoi faire, dans quel ordre, et à quelle condition passer à la suite**.
 > Le détail opératoire est dans `09-dossiers-de-lot.md`, le raisonnement dans `RAPPORT.md`.
 > Saisie des résultats : plateforme `platform/cahier-essais.html`.
