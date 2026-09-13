@@ -11,6 +11,10 @@ Le « code » est du raisonnement pharmaceutique traçable. Ces règles sont con
   Ratio BUD:FOR = **16,7:1** ou **33,3:1**.
 - **APIs** : achetés micronisés. Pas de jet milling, pas de co-micronisation, pas de spray drying.
 - **Lactoses disponibles** : Respitose® **ML001**, **SV003**, **SV010** (DFE Pharma).
+- **Carriers des mono-produits existants** (information interne, 2026-09-13) :
+  **formotérol → ML001 seul** · **budésonide → mélange SV003 + ML001**.
+  Conséquence : le prémix formotérol se fait **sur ML001** (ADR-015), et le **taux de ML001 du
+  bulk combiné** est une variable d'essai de premier rang, pas un paramètre hérité du budésonide.
 - **Équipements** : mélangeur **Inversina ≈ 20 L** (jusqu'à ~9 kg), tamiseur **Russell 250 µm**,
   remplisseuse **Harro Höfliger Modu-C MS**, dispositif **type Aerolizer** disponible.
 - **Historique** : procédé mono-produit robuste à 3, 6 et 9 kg (dilution séquentielle en

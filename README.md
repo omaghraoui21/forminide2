@@ -12,6 +12,7 @@ remplir une capsule contenant **Formotérol 12 µg + Budésonide 200 µg ou 400 
 | Si vous voulez… | Lisez |
 |---|---|
 | **Savoir quoi faire, étape par étape** | [`docs/10-marche-a-suivre.md`](docs/10-marche-a-suivre.md) |
+| **Les procédés à 1 kg et 3 kg** | [`docs/11-petites-echelles.md`](docs/11-petites-echelles.md) |
 | La réponse courte et la décision | [`RAPPORT.md`](RAPPORT.md) — section **R** |
 | La séquence expérimentale minimale (GO/NO-GO industriel) | [`docs/07-sequence-minimale.md`](docs/07-sequence-minimale.md) |
 | Pourquoi le combiné 9 kg a échoué | [`RAPPORT.md`](RAPPORT.md) §A + [`docs/05-arbre-causes.md`](docs/05-arbre-causes.md) |
@@ -43,6 +44,7 @@ docs/                    Dossiers thématiques détaillés
   08-scale-up.md         3 → 6 → 9 kg, fill ratio, énergie de mélange
   09-dossiers-de-lot.md  Dossiers de lot exécutables L0/L1/L2 + plans de prélèvement
   10-marche-a-suivre.md  Quoi faire, dans quel ordre, sous quelle condition
+  11-petites-echelles.md Procédés 1 kg et 3 kg, volumes de cuve, carriers des mono-produits
 platform/               Source de la plateforme HTML de saisie (Artifact)
   annexes/               Registre de preuves, calculs, méthode analytique
 memory/                  Mémoire de projet (décisions, questions, journal)

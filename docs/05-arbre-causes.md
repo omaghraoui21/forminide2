@@ -32,7 +32,9 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 │
 ├── 5. CARRIER
 │   ├── 5.1 Ratio fines/grossier inadapté au dual-API ................ PLAUSIBLE
-│   └── 5.2 Grade de lactose inadapté au dual-API .................... PEU PROBABLE
+│   ├── 5.2 Grade de lactose inadapté au dual-API .................... PEU PROBABLE
+│   └── 5.3 Carrier du combiné hérité du budésonide : le formotérol
+│           perd les fines dont dépend son mono-produit .............. TRÈS PLAUSIBLE
 │
 └── 6. MESURE
     └── 6.1 Prise d'essai trop grosse (~1 g au lieu de 25 mg) ........ DONNÉES INSUFFISANTES
@@ -62,6 +64,7 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 | **4.3** | Variation d'humidité | **DONNÉES INSUFFISANTES** | aucun enregistrement historique | **enregistreur HR/T** en salle, dès maintenant, sur tous les lots | coût d'un capteur |
 | **4.4** | Ségrégation au transfert/stockage | **PLAUSIBLE** | mélange ordonné = résistant, sauf fines libres | **Gate 2** : test de ségrégation par vibration + assay FOR par fraction granulométrique | inclus |
 | **5.1** | Ratio fines/grossier inadapté | **PLAUSIBLE** | SV003 et SV010 n'ont presque pas de fines < 10 µm ; la fenêtre publiée utile est 4–15 % | **L4** : SV003 + 8 % ML001, uniquement si CU bonne et FPD faible | 1 lot conditionnel |
+| **5.3** | **Le carrier du combiné a été hérité du budésonide.** Le mono-produit formotérol utilise **ML001 seul** ; le mono-produit budésonide utilise **SV003 + ML001**. Si le combiné a été fait sur le carrier du BUD, le formotérol a perdu l'environnement de fines dont dépend son propre mono-produit | **TRÈS PLAUSIBLE** | information interne (2026-09-13) ; ML001 est le seul des trois grades à posséder une vraie population fine (D10 3–7 µm) | **E-B vs E-C** à 1 kg : même architecture, taux de ML001 différent (≈ 14 % contre ≈ 33 %) | 2 lots de 1 kg, 0,96 g de FOR |
 | **5.2** | Grade de lactose inadapté au dual-API | **PEU PROBABLE** | SV003 est le carrier grossier des exemples BUD/FOR publiés ; le même grade fonctionne en mono-produit chez nous | **L5**, en dernier | 1 lot conditionnel |
 | **6.1** | **Prise d'essai historique trop grosse** | **DONNÉES INSUFFISANTES — priorité d'investigation n°1** | un RSD mesuré sur 1 g masque mathématiquement l'hétérogénéité à 25 mg | **question Q4** : consulter les protocoles d'analyse historiques. **Coût : zéro, délai : une journée** | 0 |
 
@@ -74,5 +77,11 @@ Pour chaque cause : le **test expérimental le moins cher** permettant de la con
 3. **E2 vs E3** — élimine 1.1, 3.4 et, via la cinétique embarquée, 2.2, 3.2, 3.3, 3.5.
 4. **E4** — élimine ou confirme 3.1.
 5. **L4 / L5** (conditionnels) — 5.1 puis 5.2.
+
+**Révision du 2026-09-13** : la cause **5.3** entre directement au premier étage d'essais
+(lots E-B et E-C à 1 kg, voir `11-petites-echelles.md`), avant même les lots de 3 kg. Elle est
+moins chère à tester que toutes les autres et elle découle d'une pratique interne établie.
+La question **Q18** (taille de lot et cuve des mono-produits) peut par ailleurs départager
+les causes 3.1 et 5.3 **sans consommer un gramme d'API**.
 
 Les causes 1.4 et 5.2 ne justifient **aucun essai dédié**.

@@ -108,3 +108,39 @@ données **renforcent** la recommandation, elles ne la modifient pas.
 **Inchangé** : diagnostic, architecture recommandée, séquence en 4 essais. Les trois trouvailles
 **renforcent** le dossier — la première en particulier, qui adosse la cause 3.1 à la guidance du
 constructeur.
+
+---
+
+## 2026-09-13 — Session 5 : carriers des mono-produits, et les petites échelles
+
+**Information reçue de l'équipe** — décisive et jusqu'ici inconnue :
+**mono-produit formotérol = ML001 seul** · **mono-produit budésonide = SV003 + ML001**.
+
+**Ce que ça corrige :**
+- **ADR-005 est remplacée par ADR-015.** Le prémix formotérol se fait sur **ML001**, pas sur
+  SV003. C'était une erreur de recommandation, prise sans cette donnée.
+- L'architecture recommandée devient le **double prémix (D)** : non plus « la plus robuste mais la
+  plus lourde », mais **la réunion de deux procédés déjà validés**. La seule nouveauté du procédé
+  est l'étape de combinaison.
+- **Nouvelle cause 5.3, TRÈS PLAUSIBLE** : si le combiné historique a été fait sur le carrier du
+  budésonide, le formotérol a perdu l'environnement de fines dont dépend son mono-produit.
+
+**Réserve honnête posée** : `calcul interne` — le prémix ne pèse que **4,80 % du lot** à toute
+échelle. Il protège le formotérol pendant sa désagglomération mais ne garantit pas qu'il conserve
+ses fines après dilution. D'où le lot **E-C** (carrier enrichi à ≈ 33 % de ML001).
+
+**Nouveau document `docs/11-petites-echelles.md`** — procédés à 1 kg et 3 kg :
+- le vrai paramètre d'échelle est le **volume de cuve**, pas la masse : 1 kg dans la cuve de 20 L
+  = **8 %** de remplissage, non représentatif dans aucun sens → **cuve de 3–4 L requise** ;
+- **6 kg dans la cuve de 20 L = 50 %**, soit exactement la plage constructeur :
+  **mécaniquement, 6 kg est l'échelle idéale de cet équipement**, pas 9 kg ;
+- **le prémix ne peut se faire dans l'Inversina 20 L à aucune échelle** (48 à 432 g = 0,4 à 3,6 %
+  du volume) → récipient de 0,15 à 1,5 L, Turbula ou mélange manuel ;
+- **à 1 kg, tamisage manuel et non Russell** : la rétention est une masse fixe, donc 1 à 5 % de
+  perte à 1 kg contre 0,3 à 1,7 % à 3 kg, probablement enrichie en fines donc en formotérol ;
+- **étage 1 : trois lots de 1 kg (E-A, E-B, E-C) pour 1,44 g de formotérol au total**, soit le
+  coût d'un seul lot de 3 kg, et ils trient deux variables avant d'engager l'équipement industriel.
+
+**Nouvelles questions** : Q16 (ratio SV003:ML001 du BUD mono — bloque le pesage de l'étage 1),
+Q17 (masse et RSD des mono-produits), **Q18 (taille de lot et cuve des mono-produits — peut
+départager les causes 3.1 et 5.3 sans consommer un gramme d'API)**.

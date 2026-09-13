@@ -52,7 +52,7 @@ en la citant.
 
 ## ADR-005 — Le carrier de départ est SV003, sans fines ajoutées
 
-- **Date** : 2026-09-13 · **Statut** : ACTIVE
+- **Date** : 2026-09-13 · **Statut** : ⛔ **REMPLACÉE par ADR-015**
 - **Décision** : screening sur SV003 seul ; ML001 (8 %) seulement si le Gate 4 le déclenche.
 - **Raison** : SV003 est le carrier grossier des exemples BUD/FOR publiés (P8) ; ajouter des
   fines dès le premier lot **confondrait** l'effet architecture et l'effet carrier ; et le ML001
@@ -168,4 +168,45 @@ en la citant.
   que 10 % de la masse) et le repli « taille industrielle 6 kg ».
 - **Réserve** : la fiche primaire n'a pas pu être téléchargée (403). **À confirmer sur la
   documentation interne de la machine avant toute décision engageante** (Q5).
+- **Réversibilité** : totale.
+
+## ADR-015 — Chaque API garde le carrier de son mono-produit *(remplace ADR-005)*
+
+- **Date** : 2026-09-13 (session 5) · **Statut** : ACTIVE
+- **Contexte** : information interne reçue — le **mono-produit formotérol utilise ML001 seul**,
+  le **mono-produit budésonide utilise un mélange SV003 + ML001**. ADR-005 proposait un prémix
+  formotérol sur SV003 : c'était une erreur, prise en l'absence de cette donnée.
+- **Décision** : le **prémix formotérol se fait sur ML001**, et la base budésonide conserve son
+  mélange SV003 + ML001. L'architecture recommandée devient le **double prémix (architecture D)**,
+  qui n'est plus « la plus robuste mais la plus lourde » mais **la réunion de deux procédés déjà
+  validés en interne** — la seule vraie nouveauté du procédé étant l'étape de combinaison.
+- **Raison** : on ne change pas ce qui marche. Et la pratique interne est cohérente avec la
+  théorie : ML001 est le seul des trois grades à posséder une vraie population fine (D10 3–7 µm)
+  et le plus cohésif (Carr > 25 %) — exactement ce dont un actif à 0,048 % m/m a besoin.
+- **Conséquence** : le **taux de ML001 du bulk combiné** devient une variable d'essai de premier
+  rang (lots E-B et E-C), et non un paramètre hérité du budésonide. Nouvelle cause 5.3 dans
+  l'arbre des causes, classée TRÈS PLAUSIBLE.
+- **Réserve honnête** : `calcul interne` — le prémix ne pèse que **4,80 % du lot**. Il protège le
+  formotérol pendant sa désagglomération mais **ne garantit pas qu'il conserve son environnement
+  de fines après dilution**. D'où E-C.
+- **Réversibilité** : totale.
+
+## ADR-016 — Un étage de trois lots de 1 kg avant tout passage industriel
+
+- **Date** : 2026-09-13 (session 5) · **Statut** : ACTIVE
+- **Décision** : insérer un **étage 1 kg à trois lots** (E-A témoin, E-B double prémix,
+  E-C carrier enrichi en ML001) **avant** les lots de 3 kg.
+- **Raison** : `calcul interne` — les trois lots consomment **1,44 g de formotérol au total**,
+  soit le coût d'**un seul** lot de 3 kg, et ils trient **deux variables** (architecture et taux
+  de ML001) avant d'engager le moindre équipement industriel.
+- **Conditions de validité, non négociables** :
+  1. **cuve de 3 à 4 L** — dans la cuve de 20 L, 1 kg n'occupe que **8 %** et le résultat n'est
+     représentatif dans aucun sens ; à défaut, mélangeur de paillasse et essai déclaré comme
+     essai de **formulation**, jamais de procédé ;
+  2. **tamisage manuel**, pas le Russell — sa rétention est une masse fixe, donc **1 à 5 % de
+     perte à 1 kg** contre 0,3 à 1,7 % à 3 kg, probablement enrichie en fines donc en formotérol ;
+  3. **le prémix ne se fait jamais dans l'Inversina 20 L** — 48 g y occupent **0,4 %** du volume.
+     Récipient de 0,15 à 0,5 L.
+- **Conséquence** : un étage de 1 kg n'a aucune valeur de procédé ; il ne sert qu'à trancher la
+  formulation. C'est explicite dans `11-petites-echelles.md`.
 - **Réversibilité** : totale.

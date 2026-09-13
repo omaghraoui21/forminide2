@@ -27,3 +27,11 @@ formotérol) et **Q11** (méthode), indispensables avant toute pesée et tout do
 | **Q13** | Disposons-nous d'un **impacteur d'Andersen (ACI)** en plus du NGI ? L'étude de référence de la classe est en ACI à 90 L/min | comparabilité directe de nos résultats au benchmark marché | Labo | basse | ⬜ |
 | **Q14** | Le mono-produit **formotérol** maison pèse-t-il lui aussi ~25 mg par gélule, et quel RSD d'uniformité de teneur atteint-il ? | c'est **notre propre repère interne** : s'il est à ~3 %, le combiné doit viser ≤ 3 %, pas 5 % | R&D / AQ | **haute** | ⬜ |
 | **Q15** | Paramètres actuels du **Modu-C MS** pour un remplissage à 25 mg : diamètre de dosator, taille de chambre de dosage, hauteur du lit de poudre, pré-compression, vitesse | le Gate 3 : la variabilité de masse dépend **davantage des réglages machine que du carrier** (Faulhammer *et al.*) — sans ces paramètres, un mauvais RSD serait imputé à tort à la formule | Production | moyenne — **avant Gate 3** | ⬜ |
+
+## Questions ajoutées le 2026-09-13 (session 5) — après l'information sur les carriers des mono-produits
+
+| # | Question | Bloque | Propriétaire | Criticité | Statut |
+|---|---|---|---|---|---|
+| **Q16** | **Quel est le ratio SV003 : ML001 du mono-produit budésonide ?** | les masses des lots E-A et E-B, et le contraste avec E-C : à 90:10 le ML001 total du combiné vaut ≈ 14 %, à 80:20 il vaut ≈ 24 % et le contraste avec E-C (33 %) s'affaiblit | R&D / production | **haute — bloque le pesage de l'étage 1** | ⬜ |
+| **Q17** | **Masse de remplissage des deux mono-produits** (25 mg ?) et **RSD d'uniformité atteint** | le repère interne : si le formotérol mono est à 3 %, le combiné doit viser 3 %, pas 5 % | R&D / AQ | **haute** | ⬜ |
+| **Q18** | **À quelle taille de lot et dans quelle cuve les deux mono-produits sont-ils fabriqués ?** | **peut départager deux causes de l'échec historique sans consommer un gramme d'API** : si le formotérol mono est fabriqué à 9 kg en ML001 pur (79 % de remplissage) et qu'il fonctionne, la cause « taux de remplissage » perd du poids et la cause « carrier » en gagne | Production | **très haute** | ⬜ |
