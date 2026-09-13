@@ -152,6 +152,12 @@ particules à travers le plan de symétrie diminue, le temps de mélange augment
 demande donc le travail le plus difficile (répartir 4,32 g de formotérol dans 9 kg) à l'étape la
 moins capable.
 
+**Et ce n'est pas qu'un raisonnement** : la guidance du constructeur de l'Inversina préconise de
+remplir à **≈ 50 % du volume pour une poudre sèche lourde** (≈ 2/3 pour une poudre légère) — le
+lactose d'inhalation, à 570–690 g/L, est une poudre lourde. `INFÉRENCE HAUTE CONFIANCE`
+**Le lot de 9 kg travaille donc nettement au-dessus de la plage recommandée (71 %, 79 % avec du
+ML001), tandis que le lot de 6 kg tombe exactement dessus (48 %).**
+
 **C'est le point qui explique le contraste observé** : la route « trois sous-lots de 3 kg »
 faisait toujours le travail difficile à 24 % de remplissage et ne réservait à la haute charge
 qu'une simple combinaison de mélanges déjà homogènes. La route 9 kg directe a inversé cet ordre.
@@ -621,10 +627,13 @@ un lot.
 2. **3 kg n'est PAS représentatif de la mécanique de mélange à 9 kg** (24 % contre 71 % de
    remplissage). Il ne faut donc **jamais** conclure « ça marche » à partir de 3 kg seuls, ni
    conclure « ça ne marche pas » à 9 kg sans avoir regardé le remplissage.
-3. **6 kg est la taille la plus intéressante industriellement** (43–48 % de remplissage, la zone
-   favorable d'un tumbler). `RECOMMANDATION` : si le 9 kg reste marginal après correction de la
-   répartition, **figer la taille industrielle à 6 kg** plutôt que de dégrader la formule — la
-   perte de productivité est très inférieure au coût d'un problème d'uniformité récurrent.
+3. **6 kg est la taille la plus intéressante industriellement** — et ce n'est pas un avis :
+   la guidance du constructeur de l'Inversina préconise **≈ 50 % de remplissage pour une poudre
+   sèche lourde**, ce que le lot de 6 kg réalise exactement (48 %), alors que le 9 kg est à 71 %.
+   `INFÉRENCE HAUTE CONFIANCE` (fiche primaire à récupérer en interne — Q5).
+   `RECOMMANDATION` : si le 9 kg reste marginal après correction de la répartition, **figer la
+   taille industrielle à 6 kg** plutôt que de dégrader la formule — la perte de productivité est
+   très inférieure au coût d'un problème d'uniformité récurrent.
 
 ⚠️ **Ne pas descendre sous 3 kg** pour un lot d'architecture. En revanche, le **prémix** (L0)
 est fait à sa taille réelle (144–432 g) : ce n'est pas une réduction d'échelle, c'est l'étape
@@ -731,7 +740,7 @@ n'est proposée en dehors de ce qui est mesuré.
 |---|---|---|---|
 | **Gate 1 — Homogénéité** | assay BUD et FOR ; **10 positions × 25 mg** (haut/milieu/bas × paroi/centre + fond de cuve) ; RSD par API ; cartographie spatiale | teneur **95–105 %** ; **RSD ≤ 5 %** pour les deux APIs ; aucun point hors 90–110 %<br>*(benchmark marché : RSD 1,6 % BUD et 2,0 % FOR)* | ne pas poursuivre le lot ; voir arbre de décision |
 | **Gate 2 — Aptitude poudre** | densité versée/tassée, **Carr**, **Hausner**, écoulement ; **test de ségrégation** (vibration contrôlée ou tamisage-fractionnement, assay FOR par fraction) | Carr ≤ 25 % ; pas de dérive d'assay FOR > 10 % entre fractions | corriger le carrier (L5) avant tout essai de remplissage |
-| **Gate 3 — Remplissage** | essai Modu-C MS, **25 mg**, capsule taille 3 ; masse de remplissage (RSD), **dose délivrée** (UDD, Ph. Eur. 2.9.18) sur le dispositif type Aerolizer | RSD masse ≤ 3 % *(benchmark marché : 3,1 %)* ; dose délivrée ≥ **70 %** *(marché : 73 % BUD, 85 % FOR)* ; RSD de dose délivrée ≤ 5 % *(marché : 4,4–4,6 %)* | revenir au carrier/flux (SV010), pas à l'architecture |
+| **Gate 3 — Remplissage** | essai Modu-C MS, **25 mg**, capsule taille 3 ; masse de remplissage (RSD), **dose délivrée** (UDD, Ph. Eur. 2.9.18) sur le dispositif type Aerolizer | RSD masse ≤ 3 % *(benchmark marché : 3,1 %)* ; dose délivrée ≥ **70 %** *(marché : 73 % BUD, 85 % FOR)* ; RSD de dose délivrée ≤ 5 % *(marché : 4,4–4,6 %)* | **régler d'abord les paramètres machine**, ensuite seulement le carrier — jamais l'architecture |
 | **Gate 4 — Aérodynamique** | **NGI**, débit fixé pour ΔP = 4 kPa (Ph. Eur. 2.9.18) ; FPD et FPF **par API** ; MMAD ; GSD | **FPF ≥ 30 %** pour les deux APIs en screening *(marché : 44,7 % BUD, 56,1 % FOR ; FPD 140,7 µg et 6,18 µg)* ; MMAD 2–4 µm | voir arbre de décision §N.2 |
 
 **Méthode analytique** : dosage simultané BUD + FOR par HPLC-UV. `calcul interne` — 12 µg de FOR
@@ -764,6 +773,16 @@ Gate 4 : FPD ?
 │                                     puis passer à un couple carrier+fines [L4, L5]
 └─ Les deux FPD bonnes ───────────► scale-up [§O]
 
+Gate 3 : remplissage Modu-C ?
+├─ masse MOYENNE de 25 mg inatteignable ──► sujet CARRIER (densité tassée, perméabilité)
+│                                            → SV010, puis SV001 en dernier recours
+└─ masse moyenne OK mais RSD de masse élevé ─► sujet PARAMÈTRES MACHINE d'abord
+                                             (chambre de dosage, hauteur de lit,
+                                              pré-compression, vitesse) — la variabilité
+                                              de masse n'est pas corrélée aux attributs
+                                              du matériau. Ne pas changer le carrier
+                                              avant d'avoir épuisé les réglages.
+
 Scale-up :
 ├─ 3 kg bon, 9 kg mauvais ────────► mécanique de mélange : taux de remplissage (71–79 %),
 │                                   nb de révolutions, répartition 7:2:1
@@ -782,7 +801,7 @@ de révolutions.** La proportionnalité simple est ce qui a fait échouer le pas
 
 | Paramètre | 3 kg | 6 kg | 9 kg | À maintenir ou recalculer |
 |---|---|---|---|---|
-| **Taux de remplissage** (SV003) | 24 % | 48 % | **71 %** | **facteur critique n°1** — à mesurer réellement sur le bulk (densité versée du mélange, pas du lactose seul) |
+| **Taux de remplissage** (SV003) | 24 % | **48 %** ✅ | **71 %** ⚠️ | **facteur critique n°1** — à mesurer réellement sur le bulk. **Cible constructeur pour une poudre lourde : ≈ 50 %** |
 | **Répartition des fractions** | 7:2:1 | 7:2:1 | 7:2:1 | **maintenu** (sans dimension) |
 | **Concentration du prémix FOR** | 1 % | 1 % | 1 % | **maintenue** (sans dimension) |
 | **Vitesse Inversina (rpm)** | X | X | X | **maintenue** (donnée Q5 à récupérer) |
@@ -823,6 +842,7 @@ que l'on cherche à mesurer.
 | **Tamis manuels 150 et 212 µm** (usage prémix uniquement) | un agglomérat de 250 µm porte 27–41 % d'une dose de FOR ; à 150 µm il n'en porte plus que 6–9 % | **2** |
 | **Barre/soufflette antistatique au poste de pesée** | 4,3 g de FOR micronisé, pesée et transfert | **3** |
 | **Thermohygromètre enregistreur en salle de mélange** | rend la variabilité inter-lots interprétable au lieu d'être subie | **3** |
+| **Aucun achat** : récupérer la **fiche technique de l'Inversina** et **identifier la version du dispositif RS01** | le taux de remplissage recommandé et le débit de test (4 kPa à ~100 L/min en version standard, 65 L/min en version haute résistance) conditionnent respectivement le scale-up et toute mesure de FPF | **1** |
 | **Échantillons gratuits de fines DFE** (LH230 et/ou LH300) | pas un achat : un échantillonnage fournisseur, à demander dès maintenant pour ne pas attendre 8 semaines le jour où on en aura besoin | **2** |
 
 ### Plus tard (seulement si une porte le déclenche)

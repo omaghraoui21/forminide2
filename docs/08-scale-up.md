@@ -17,6 +17,33 @@ du **taux de remplissage**, qui n'est pas conservé quand on multiplie la masse 
 | 8,1 kg (après 2e fraction) | 12,9 L → 64 % | 11,7 L → 59 % | 14,2 L → 71 % | 13,0 L → 65 % |
 | **9 kg** | 14,3 L → **71 %** | 13,0 L → **65 %** | 15,8 L → **79 %** | 14,4 L → **72 %** |
 
+### Ce que recommande le fabricant du mélangeur
+
+`INFÉRENCE HAUTE CONFIANCE` (guidance Bioengineering relayée par les fiches distributeurs ;
+**fiche primaire à récupérer en interne — Q5**) : remplir à **≈ 2/3 du volume pour une poudre
+sèche légère** et à **≈ 50 % du volume pour une poudre sèche lourde**. Vitesse recommandée pour
+le modèle 20 L : **20–30 rpm**.
+
+Le lactose d'inhalation (densité versée 570–690 g/L) est une **poudre sèche lourde** → la valeur
+applicable est **≈ 50 %**.
+
+| Taille de lot | Taux de remplissage (SV003) | Position vs recommandation fabricant |
+|---|---|---|
+| 3 kg | 24 % | **en dessous** — mélange peu contraint, mais peu représentatif du 9 kg |
+| **6 kg** | **48 %** | ✅ **exactement dans la plage recommandée** |
+| 9 kg | **71 %** | ⚠️ **nettement au-dessus** (79 % avec un bulk riche en ML001) |
+
+> **C'est la confirmation la plus directe du diagnostic** : le procédé 9 kg demande à une étape
+> qui travaille **au-delà de la plage recommandée par le constructeur** d'accomplir l'opération la
+> plus difficile du procédé — répartir 4,32 g de formotérol dans 9 kg. La répartition **7 : 2 : 1**
+> ramène la charge de travail de cette étape de 33 % à **10 % de la masse**, et le repli
+> « taille industrielle à 6 kg » place le procédé pile dans la plage constructeur.
+
+**Note énergétique** `calcul interne` : à 25 rpm, nos 15 min par étape font ≈ **375 révolutions**,
+contre ≈ **330** pour la plateforme brevetée EP3175842A1 (Turbula, 22 rpm, 15 min). Les deux
+procédés sont donc **énergétiquement comparables** — une raison de plus de ne pas allonger le
+temps de mélange, mais plutôt de piloter le remplissage.
+
 > ⚠️ Ces volumes sont calculés à partir des **densités versées du lactose seul**. La densité
 > versée du **bulk réel** (après mélange, tamisage, avec les APIs) doit être **mesurée** au
 > Gate 2 et les taux de remplissage recalculés. C'est une mesure à 10 minutes qui conditionne
@@ -38,10 +65,10 @@ mécanique simple, testable, et qui n'accuse ni la formule ni les APIs.
 |---|---|---|
 | **Répartition 7:2:1** | **MAINTENIR** | grandeur sans dimension |
 | **Concentration du prémix FOR (1 % m/m)** | **MAINTENIR** | sans dimension — c'est l'intérêt majeur de l'architecture B |
-| **Vitesse Inversina (rpm)** | **MAINTENIR** | à documenter (Q5) |
+| **Vitesse Inversina (rpm)** | **MAINTENIR** | plage constructeur **20–30 rpm** pour le 20 L ; relever et figer la valeur réelle (Q5) |
 | **Nombre de révolutions (rpm × t)** | **RECALCULER** si le remplissage dépasse ~55–60 % | l'homogénéité en tumbler suit le **nombre de révolutions**, pas le temps ; mais à fort remplissage la relation se dégrade |
 | **Temps par étape (15 min)** | **À CHALLENGER par la mesure** | cinétique embarquée dans L2 à 3 kg, **à refaire à 9 kg** si le 9 kg est marginal |
-| **Taux de remplissage** | **PILOTER** | facteur critique n°1 ; c'est lui, et non la masse, qu'il faut chercher à reproduire |
+| **Taux de remplissage** | **PILOTER** | facteur critique n°1 ; c'est lui, et non la masse, qu'il faut chercher à reproduire. **Cible constructeur pour une poudre lourde : ≈ 50 %** |
 | **Maille de tamisage (250 µm)** | **MAINTENIR** | vérifier le **débit** du Russell à 9 kg (Q7) : un tamisage plus long = plus de contact, plus de charge électrostatique |
 | **Nombre d'étapes (3)** | **MAINTENIR** | ne pas ajouter d'étape au scale-up : chaque étape supplémentaire ajoute du press-on |
 | **Échantillonnage** | **AUGMENTER** : 10 points à 3 et 6 kg, **15 points à 9 kg** | un lit plus profond exige plus de points, en particulier **au fond de cuve** |

@@ -73,3 +73,38 @@ notre propre mono-produit formotérol ? — c'est le repère interne qui manque)
 
 **Inchangé** : diagnostic, architecture recommandée et séquence expérimentale. Les nouvelles
 données **renforcent** la recommandation, elles ne la modifient pas.
+
+---
+
+## 2026-09-13 — Session 3 : équipements, remplissage, et dossiers de lot exécutables
+
+**Fait :**
+- Recherche ciblée sur les trois questions d'équipement restantes (Q5, Q10, + Gate 3).
+- Rédigé **`docs/09-dossiers-de-lot.md`** : dossiers de lot exécutables **L0, L1 et L2**, avec
+  formules corrigées du titre, procédés pas à pas, plans de prélèvement à 10 positions, tableaux
+  de relevé, feuille environnement et arbres de décision par lot.
+- Mis à jour : `RAPPORT.md` (§A.2d, §J, Gate 3, arbre de décision, §O, achats),
+  `docs/08-scale-up.md`, `docs/annexes/A1` (P16 à P18), `memory/questions-ouvertes.md`,
+  `memory/decisions.md` (ADR-013, ADR-014), `README.md`.
+
+**Trouvailles :**
+1. **Guidance constructeur de l'Inversina** (relayée, fiche primaire non téléchargeable) :
+   remplir à **≈ 50 % du volume pour une poudre sèche lourde**, ≈ 2/3 pour une poudre légère ;
+   **20–30 rpm** sur le 20 L. Le lactose est une poudre lourde → **le lot de 9 kg (71 %) est
+   au-dessus de la recommandation, le lot de 6 kg (48 %) est exactement dessus.** L'hypothèse
+   « taux de remplissage » cesse d'être un raisonnement et devient un écart documenté.
+   Note : à 25 rpm, nos 15 min = **≈ 375 révolutions** contre ≈ 330 pour EP3175842A1 → procédés
+   énergétiquement comparables.
+2. **Dispositif RS01** : version standard **faible résistance, 4 kPa à ≈ 100 L/min** ; version
+   haute résistance **4 kPa à 65 L/min**. L'écart change complètement la FPF mesurée →
+   **identifier notre version avant le premier NGI** (Q10 relevée en criticité haute).
+3. **Remplissage par dosator à faible masse** (Faulhammer *et al.*, gélules taille 3, 1–45 mg) :
+   la **masse** dépend du matériau (PSD, perméabilité, compressibilité), mais **la variabilité de
+   masse n'est pas corrélée aux attributs du matériau** — elle est dominée par les paramètres
+   procédé. → **ADR-013** : au Gate 3, régler la machine avant de toucher au carrier.
+
+**Nouvelle question** : Q15 (paramètres actuels du Modu-C MS pour 25 mg).
+
+**Inchangé** : diagnostic, architecture recommandée, séquence en 4 essais. Les trois trouvailles
+**renforcent** le dossier — la première en particulier, qui adosse la cause 3.1 à la guidance du
+constructeur.

@@ -135,3 +135,37 @@ en la citant.
 - **Conséquence** : la séparation historique n'a pas acheté l'uniformité qu'elle devait protéger.
   L'échec est donc imputable à l'architecture de prémélange, pas au principe de la combinaison.
 - **Réversibilité** : sans objet (constat).
+
+## ADR-013 — Au Gate 3, les réglages machine passent avant le carrier
+
+- **Date** : 2026-09-13 (session 3) · **Statut** : ACTIVE · **Remplace** la consigne initiale du
+  Gate 3 (« revenir au carrier/flux (SV010) »).
+- **Contexte** : le Gate 3 (remplissage Modu-C à 25 mg) renvoyait directement au carrier en cas
+  de RSD de masse insuffisant.
+- **Décision** : distinguer deux cas. **Masse moyenne de 25 mg inatteignable** → sujet carrier
+  (densité tassée, perméabilité à l'air, compressibilité). **Masse moyenne correcte mais RSD
+  élevé** → **régler d'abord les paramètres machine** (chambre de dosage, hauteur du lit de
+  poudre, pré-compression, vitesse) ; ne changer de carrier qu'ensuite.
+- **Raison** : `FAIT CONFIRMÉ` — Faulhammer *et al.* (Int J Pharm 2014 ; Drug Dev Ind Pharm 2015),
+  sur gélules taille 3 et 1–45 mg : la **masse de remplissage** est corrélée à la taille de
+  particule, la perméabilité et la compressibilité, mais **aucune corrélation n'est trouvée entre
+  les attributs du matériau et la variabilité de masse**, qui est dominée par les paramètres
+  procédé.
+- **Conséquence** : évite de sacrifier une architecture de bulk validée pour un problème de
+  réglage de dosator. Nouvelle question **Q15** (paramètres actuels du Modu-C).
+- **Réversibilité** : totale.
+
+## ADR-014 — Le taux de remplissage cible est celui du constructeur, pas une estimation
+
+- **Date** : 2026-09-13 (session 3) · **Statut** : ACTIVE
+- **Décision** : viser **≈ 50 % de remplissage** du mélangeur pour le bulk (poudre sèche lourde),
+  conformément à la guidance Bioengineering, et traiter tout dépassement comme un risque documenté.
+- **Raison** : `INFÉRENCE HAUTE CONFIANCE` — la guidance constructeur (≈ 2/3 pour une poudre
+  légère, **≈ 50 % pour une poudre lourde**, 20–30 rpm sur le 20 L) place le lot de **6 kg à 48 %
+  (conforme)** et le lot de **9 kg à 71 % (au-dessus)**. L'hypothèse 3.1 de l'arbre de causes
+  cesse d'être un raisonnement pour devenir un écart à une recommandation.
+- **Conséquence** : renforce la répartition 7:2:1 (l'étape à fort remplissage n'incorpore plus
+  que 10 % de la masse) et le repli « taille industrielle 6 kg ».
+- **Réserve** : la fiche primaire n'a pas pu être téléchargée (403). **À confirmer sur la
+  documentation interne de la machine avant toute décision engageante** (Q5).
+- **Réversibilité** : totale.

@@ -18,6 +18,7 @@ remplir une capsule contenant **Formotérol 12 µg + Budésonide 200 µg ou 400 
 | Les brevets exploitables | [`docs/03-brevets.md`](docs/03-brevets.md) |
 | ML001 / SV003 / SV010 | [`docs/04-lactoses.md`](docs/04-lactoses.md) |
 | Les protocoles de lots à fabriquer | [`docs/06-protocole-lots.md`](docs/06-protocole-lots.md) |
+| **Les dossiers de lot prêts à exécuter (L0, L1, L2)** | [`docs/09-dossiers-de-lot.md`](docs/09-dossiers-de-lot.md) |
 | Le scale-up 3 → 6 → 9 kg | [`docs/08-scale-up.md`](docs/08-scale-up.md) |
 | Chaque donnée avec sa source et son niveau de confiance | [`docs/annexes/A1-registre-preuves.md`](docs/annexes/A1-registre-preuves.md) |
 | Les calculs (agglomérats, RSD, taux de remplissage) | [`docs/annexes/A2-calculs.md`](docs/annexes/A2-calculs.md) + [`scripts/calculs_cles.py`](scripts/calculs_cles.py) |
@@ -39,6 +40,7 @@ docs/                    Dossiers thématiques détaillés
   06-protocole-lots.md   Lots L0 → L6 : hypothèse, composition, procédé, réponses
   07-sequence-minimale.md  Chemin le plus court vers une décision industrielle
   08-scale-up.md         3 → 6 → 9 kg, fill ratio, énergie de mélange
+  09-dossiers-de-lot.md  Dossiers de lot exécutables L0/L1/L2 + plans de prélèvement
   annexes/               Registre de preuves, calculs, méthode analytique
 memory/                  Mémoire de projet (décisions, questions, journal)
 scripts/                 Calculs reproductibles

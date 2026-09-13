@@ -275,3 +275,71 @@ brevet doit toujours être re-téléchargé avant usage réglementaire**.
   cf. HU228622B1, densité versée cible 0,30–0,36 g/mL).
 - **CONSÉQUENCE** : **ne jamais comparer nos 25 mg à Symbicort** : ce n'est pas la même classe de
   formulation. Le comparateur pertinent est FORPACK / ALENIA / Foracort.
+
+## P16 — Taux de remplissage recommandé par le fabricant de l'Inversina
+
+- **SOURCE** : documentation Bioengineering AG relayée par les fiches distributeurs
+  (LabWrench, DirectIndustry) — *la fiche technique primaire n'a pas pu être téléchargée
+  (403) ; elle est disponible en interne puisque le site possède la machine* → **Q5**.
+- **DONNÉE** : remplir à **environ 2/3 du volume total pour une poudre sèche légère** et à
+  **environ 50 % du volume total pour une poudre sèche lourde**. Vitesse recommandée pour le
+  modèle **20 L : 20–30 rpm**. La vitesse absolue de brassage reste comparable d'une taille à
+  l'autre (20 L à 30 rpm ≈ 2 L à 60 rpm).
+- **CONFIANCE** : **INFÉRENCE HAUTE CONFIANCE** (guidance fabricant relayée, source primaire non
+  téléchargée) — **à confirmer sur la fiche technique interne avant toute décision engageante**.
+- **INTERPRÉTATION** : le lactose d'inhalation (densité versée 570–690 g/L) est une **poudre
+  sèche lourde** → la recommandation applicable est **≈ 50 %**. Or `calcul interne` :
+  **3 kg = 24 %** · **6 kg = 43–53 %** · **9 kg = 65–79 %**.
+- **CONSÉQUENCE — c'est la confirmation la plus directe du diagnostic** : le lot de **9 kg
+  travaille nettement au-dessus de la plage recommandée par le fabricant**, tandis que le lot de
+  **6 kg tombe exactement dessus**. L'hypothèse 3.1 de l'arbre de causes (« la dernière dilution
+  est exécutée au pire taux de remplissage ») n'est plus seulement un raisonnement mécanique :
+  elle est adossée à la guidance du constructeur. Cela **renforce** la recommandation de
+  répartition 7:2:1 (l'étape à fort remplissage n'a plus que 10 % de la masse à incorporer) et
+  la position de repli « figer la taille industrielle à 6 kg ».
+  Note complémentaire : **20–30 rpm** est cohérent avec les 22 rpm du Turbula d'EP3175842A1 →
+  à 25 rpm, nos 15 min font ≈ **375 révolutions**, contre ≈ 330 pour le brevet. Les deux
+  procédés sont donc énergétiquement comparables.
+
+## P17 — Résistance du dispositif RS01 / Aerolizer (débit de test NGI)
+
+- **SOURCE** : documentation Plastiape/Berry CPI et littérature DPI sur le RS01.
+- **DONNÉE** : en version standard, le **RS01 est un dispositif à faible résistance atteignant
+  une perte de charge de 4 kPa à environ 100 L/min** ; il existe une **version haute résistance
+  (4 kPa à 65 L/min)**.
+- **CONFIANCE** : **INFÉRENCE HAUTE CONFIANCE** (documentation fabricant relayée).
+- **INTERPRÉTATION** : le débit de test Ph. Eur. 2.9.18 (ΔP = 4 kPa) dépend donc de **la version
+  exacte** du dispositif dont nous disposons — l'écart est considérable (65 contre 100 L/min) et
+  change complètement la FPF mesurée.
+- **CONSÉQUENCE** : **identifier la version du dispositif avant le premier NGI** (Q10), et
+  **mesurer la résistance** plutôt que la supposer. Repère de comparabilité : l'étude
+  d'équivalence de référence de la classe (P3) travaille à l'**ACI, 90 L/min**.
+
+## P18 — Remplissage par dosator à faible masse (Faulhammer et al.)
+
+- **SOURCE** : Faulhammer E, Fink M, Llusá M, Lawrence S, Biserni S, Calzolari V, Khinast J.
+  *Low-dose capsule filling of inhalation products: critical material attributes and process
+  parameters.* Int J Pharm 2014 (PMID 25087508). · Faulhammer E *et al.* *The effects of material
+  attributes on capsule fill weight and weight variability in dosator nozzle machines.*
+  Int J Pharm 2014;471(1-2):332-338. · Faulhammer E *et al.* *Development of a design space and
+  predictive statistical model for capsule filling of low-fill-weight inhalation products.*
+  Drug Dev Ind Pharm 2015.
+- **DONNÉES** : six poudres remplies en **gélules taille 3**, trois volumes de chambre de dosage,
+  deux vitesses. Corrélation nette entre la **masse de remplissage** et la **taille de particule**,
+  la **perméabilité à l'air** et la **compressibilité**. **Plus la masse de remplissage diminue,
+  plus le nombre de facteurs influents augmente** : angle de friction à la paroi, densité tassée
+  et forme des particules deviennent importants. **Aucune corrélation n'a été trouvée entre les
+  attributs du matériau et la variabilité de masse** : celle-ci est dominée par les **paramètres
+  procédé**. Un **design space a été établi pour les lactoses d'inhalation** sur des masses de
+  **1 à 45 mg**, avec des modèles prédictifs (R² 0,94–0,96), et transposé d'une machine de
+  laboratoire à une machine industrielle.
+- **CONFIANCE** : **FAIT CONFIRMÉ** (articles peer-reviewed, travaux conduits avec MG2 et GSK).
+- **INTERPRÉTATION** : à 25 mg en gélule taille 3, **la masse moyenne** dépend du carrier (PSD,
+  perméabilité, compressibilité, densité tassée) mais **la variabilité de masse dépend d'abord
+  des réglages machine** (taille de chambre de dosage, hauteur du lit de poudre, pré-compression,
+  vitesse).
+- **CONSÉQUENCE POUR NOS ESSAIS** : au **Gate 3**, un RSD de masse insuffisant au Modu-C **ne
+  justifie pas de changer de carrier en premier**. L'ordre correct est : (1) régler les paramètres
+  machine ; (2) seulement ensuite envisager SV010 ou SV001. Cela **corrige** la consigne initiale
+  du Gate 3, qui renvoyait directement au carrier. À l'inverse, si la **masse moyenne** visée de
+  25 mg n'est pas atteignable, c'est bien un sujet de carrier (densité tassée, perméabilité).
