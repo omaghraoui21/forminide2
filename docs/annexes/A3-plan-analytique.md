@@ -36,8 +36,8 @@ formulatoire.
 | Analyse | Critère GO |
 |---|---|
 | Teneur moyenne BUD et FOR | **95 – 105 %** de la valeur théorique |
-| **RSD BUD** (10–15 × 25 mg) | **≤ 5 %** |
-| **RSD FOR** (10–15 × 25 mg) | **≤ 5 %** |
+| **RSD BUD** (10–15 × 25 mg) | **≤ 5 %** *(benchmark marché : 1,62 %)* |
+| **RSD FOR** (10–15 × 25 mg) | **≤ 5 %** *(benchmark marché : 2,02 %)* |
 | Valeurs individuelles | aucune hors **90 – 110 %** |
 | Cartographie spatiale | pas de gradient systématique haut/bas ou paroi/centre |
 | Bilan matière du lot | ≥ 98 % |
@@ -58,17 +58,17 @@ formulatoire.
 
 | Analyse | Critère GO |
 |---|---|
-| Essai Modu-C MS, **25 mg**, gélule taille 3 | **RSD de masse ≤ 3 %** |
+| Essai Modu-C MS, **25 mg**, gélule taille 3 | **RSD de masse ≤ 3 %** *(benchmark marché : 3,09 % ; produit de référence 2,78–4,26 %)* |
 | Teneur en gélule (n ≥ 20) | 95 – 105 %, RSD ≤ 5 % |
-| **Dose délivrée** (Ph. Eur. 2.9.18) sur le dispositif type Aerolizer | **≥ 70 %** de la dose mesurée (référence marché : 73 % BUD, 85 % FOR) |
-| Uniformité de la dose délivrée | conforme Ph. Eur. |
+| **Dose délivrée** (Ph. Eur. 2.9.18) sur le dispositif type Aerolizer | **≥ 70 %** de la dose mesurée *(marché : 73 % BUD, 85 % FOR ; produit de référence 88 % et 92 %)* |
+| Uniformité de la dose délivrée | conforme Ph. Eur. ; **RSD ≤ 5 %** *(marché : 4,40 % BUD, 4,59 % FOR ; n = 30)* |
 
 ### Gate 4 — Performance aérodynamique *(la ressource rare — jamais sur un mauvais mélange)*
 
 | Analyse | Critère GO |
 |---|---|
-| **NGI**, débit réglé pour **ΔP = 4 kPa** (Ph. Eur. 2.9.18) | débit à déterminer selon la résistance du dispositif (à documenter — Q10 ; la littérature sur dispositifs de type Aerolizer/Cyclohaler travaille entre 60 et 100 L/min) |
-| **FPD et FPF (< 5 µm) pour CHAQUE API séparément** | **FPF ≥ 30 %** en screening ; cible marché **45–56 %** |
+| **NGI**, débit réglé pour **ΔP = 4 kPa** (Ph. Eur. 2.9.18) | débit à déterminer selon la résistance du dispositif (Q10). Repère de classe : l'étude d'équivalence de référence utilise un **ACI (Andersen) à 90 L/min** ; la littérature sur Cyclohaler travaille aussi à 90 L/min |
+| **FPD et FPF (< 5 µm) pour CHAQUE API séparément**<br>*FPF = FPD / dose délivrée totale (définition retenue par l'étude de référence)* | **FPF ≥ 30 %** en screening ; **cible marché : 44,7 % (BUD) et 56,1 % (FOR)**, soit FPD 140,7 µg et 6,18 µg |
 | **MMAD** et GSD par API | MMAD 2 – 4 µm |
 | Dépôt dans l'induction / la gélule / le dispositif | documenté (les pertes dans le dispositif renseignent sur l'adhésion) |
 
@@ -85,6 +85,25 @@ formulatoire.
 | **L2** | cinétique 5 / 10 / 15 / 25 min | sous-mélange vs sur-mélange (désaccord D4) |
 | **Tous** | bilan matière à chaque tamisage (±0,5 %) | pertes préférentielles de formotérol |
 | **Tous** | HR et T° de salle à chaque étape | variabilité inter-lots |
+
+## 4 bis. Repères chiffrés du marché (produit commercial équivalent, J Bras Pneumol 2012)
+
+À afficher au-dessus de la paillasse : ce sont les valeurs qu'un produit **autorisé** atteint,
+pas des objectifs théoriques.
+
+| Grandeur | Gélule unique BUD/FOR 400/12 | Notre critère de phase |
+|---|---|---|
+| Masse de gélule | 25,56 ± 0,79 mg (RSD 3,09 %) | RSD ≤ 3 % |
+| RSD d'uniformité de teneur — BUD | **1,62 %** | ≤ 5 % |
+| RSD d'uniformité de teneur — FOR | **2,02 %** | ≤ 5 % |
+| RSD de dose délivrée — BUD / FOR | 4,40 % / 4,59 % | ≤ 5 % |
+| Dose délivrée / dose étiquetée — BUD / FOR | 73 % / 85 % | ≥ 70 % |
+| FPF — BUD / FOR | 44,7 % / 56,1 % | ≥ 30 % en screening |
+| FPD — BUD / FOR | 140,7 µg / 6,18 µg | — |
+
+> **Le formotérol y est mieux uniforme (2,02 %) et mieux aérosolisé (FPD 6,18 µg) en gélule
+> combinée qu'en gélule séparée (3,23 % et 5,46 µg).** Toute conclusion de nos essais doit être
+> lue contre ce repère avant d'incriminer le couple BUD/FOR.
 
 ## 5. Ce qu'il ne faut pas faire
 

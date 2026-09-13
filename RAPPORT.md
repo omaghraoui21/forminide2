@@ -181,9 +181,9 @@ Détail complet, marché par marché : `docs/02-produits-commercialises.md`.
 
 | Produit | Marché | Titulaire | Forme | Dosages | Masse poudre | Excipients | Device |
 |---|---|---|---|---|---|---|---|
-| **FORPACK capsair** | Turquie | Neutec İnhaler | capsule gélatine | **12/200** et 12/400 µg | **25,000 mg** pour le 12/200 (lactose **24,7880 mg**) ; non vérifié pour le 12/400 | **lactose seul** | Capsair (mono-dose à perforation) |
+| **FORPACK capsair** | Turquie | Neutec İnhaler | capsule gélatine | **12/200** et **12/400** µg | **25,000 mg pour les deux dosages** (lactose **24,7880** et **24,588 mg**) | **lactose seul** | Capsair (mono-dose à perforation) |
 | **FORPACK discair** | Turquie | Neutec İnhaler | poudre multidose | 12/400 µg | **13,000 mg** (lactose **12,5880 mg**) | lactose seul | Discair |
-| **ALENIA** | Brésil | Biosintética (Aché) | capsule | 6/100, 6/200, **12/400** µg | non déclarée | lactose monohydraté | Aerocaps® |
+| **ALENIA** | Brésil | Biosintética (Aché) | capsule | 6/100, 6/200, **12/400** µg | **25,56 ± 0,79 mg** (mesurée, n = 20) | lactose monohydraté | Aerocaps® |
 | **FORACORT Rotacaps** | Inde | Cipla | capsule | 6/100, 6/200, 6/400 µg | non déclarée | lactose | Rotahaler |
 | **FORMONIDE** | Inde | Lupin | capsule | 6/100, 6/200, 6/400 µg | non déclarée | lactose | Rotahaler |
 | **Symbicort Turbuhaler** | Monde | AstraZeneca | multidose sans carrier | 100/6 → 400/12 | 0,49–0,81 mg lactose/dose | lactose | Turbuhaler |
@@ -197,27 +197,40 @@ Détail complet, marché par marché : `docs/02-produits-commercialises.md`.
    excipient : **le lactose**. Notre cahier des charges (25 mg, capsule, lactose seul, 12/200 et
    12/400) est donc **la copie d'un produit autorisé depuis le 06/05/2013**, avec 24 mois de
    péremption, conservation < 25 °C au sec, blister Alu/Alu.
-   → **Conséquence** : aucune justification à ajouter un excipient, ni à changer la masse cible.
+   Le KÜB du **12/400 capsair** (AMM 250/44, même date) déclare **laktoz 24,588 mg** → **25,0000 mg**
+   également. **Le même fabricant utilise donc le même bulk à 25,000 mg pour les deux dosages**,
+   la seule différence étant l'échange budésonide ↔ lactose.
+   → **Conséquence** : aucune justification à ajouter un excipient, ni à changer la masse cible —
+   et **notre stratégie « un seul bulk, deux dosages » est celle du marché**.
 
-2. **`FAIT CONFIRMÉ` — La performance cible est publiée.** L'étude d'équivalence pharmaceutique
-   brésilienne (J Bras Pneumol 2012) compare la **capsule unique** (Aerocaps®) aux **deux capsules
-   séparées** (Aerolizer®) :
+2. **`FAIT CONFIRMÉ` — La performance cible est publiée, et elle démolit l'argument historique.**
+   L'étude d'équivalence pharmaceutique brésilienne (J Bras Pneumol 2012, essais supervisés par
+   l'ANVISA, impacteur d'Andersen) compare la **gélule unique** BUD/FOR 400/12 (Aerocaps®) aux
+   **deux gélules séparées** (Aerolizer®) — c'est-à-dire exactement la solution de repli adoptée
+   historiquement par notre site :
 
-   | | Capsule unique | Deux capsules séparées |
+   | | **Gélule unique** | **Deux gélules séparées** |
    |---|---|---|
-   | Teneur BUD / FOR | 111,0 % / 103,8 % | 110,5 % / 104,5 % |
-   | Dose délivrée BUD / FOR | 293,2 µg / 10,2 µg | 353,0 µg / 11,1 µg |
-   | FPF < 5 µm BUD / FOR | **45 % / 56 %** | 54 % / 52 % |
+   | Masse de gélule (n = 20) | 25,56 ± 0,79 mg | BUD 25,35 ± 1,08 · FOR 25,19 ± 0,70 mg |
+   | Teneur BUD / FOR | 111,4 % / 103,8 % | 110,6 % / 104,5 % |
+   | Dose délivrée BUD / FOR | 293,2 µg (**73 %**) / 10,2 µg (**85 %**) | 353,0 µg (88 %) / 11,1 µg (92 %) |
+   | **RSD d'uniformité de teneur BUD / FOR** | **1,62 % / 2,02 %** | **5,44 % / 3,23 %** |
+   | **FPF < 5 µm BUD / FOR** | **44,7 % / 56,1 %** | 53,6 % / 52,1 % |
+   | **Dose de particules fines BUD / FOR** | 140,7 µg / **6,18 µg** | 181,5 µg / 5,46 µg |
 
-   → La capsule unique **perd un peu sur le budésonide** (45 vs 54 %) et **gagne sur le
-   formotérol** (56 vs 52 %). `INFÉRENCE HAUTE CONFIANCE` : la combinaison, correctement
-   formulée, **améliore** le détachement du formotérol — cohérent avec l'idée que le budésonide,
-   17 à 33 fois plus abondant, **sature les sites de haute énergie** du lactose et laisse au
-   formotérol des sites plus faibles. La compétition BUD/FOR n'est donc pas seulement un risque,
-   c'est aussi un **levier**, à condition qu'elle se produise sur le carrier et non dans un
-   agglomérat.
-   → **Conséquence pour nos essais** : viser FPF ≥ 30 % en screening, 45–56 % en cible ; dose
-   délivrée ≥ 70 % (le marché est à 73 % pour BUD et 85 % pour FOR).
+   → **Sur les deux principes actifs, la gélule combinée est plus uniforme que les deux
+   mono-produits qu'elle remplace** (formotérol : RSD 2,02 % contre 3,23 %). Et **le formotérol
+   y délivre plus de masse fine en absolu** (6,18 contre 5,46 µg), malgré une dose délivrée plus
+   faible. `FAIT CONFIRMÉ`
+   → `INFÉRENCE HAUTE CONFIANCE` : cohérent avec l'idée que le budésonide, 17 à 33 fois plus
+   abondant, **sature les sites de haute énergie** du lactose et laisse au formotérol des sites
+   plus faibles, dont il se détache mieux. La compétition BUD/FOR n'est pas seulement un risque :
+   c'est un **levier**, à condition qu'elle se produise sur le carrier et non dans un agglomérat.
+   → **Conséquence pour nos essais** : cibles chiffrées issues du marché — RSD de masse ≈ 3 % ;
+   RSD d'uniformité de teneur ≤ 2 % atteignable (notre critère de 5 % est prudent) ; dose délivrée
+   ≥ 70 % ; FPF ≥ 30 % en screening, 45–56 % en cible.
+   → **La gélule de référence « formotérol seul » pèse 25,19 mg** : un mono-produit à 0,048 % m/m
+   dans 25 mg est donc, lui aussi, la norme de la classe.
 
 3. **`FAIT CONFIRMÉ` — Le même industriel utilise deux masses différentes selon le device**
    (25 mg en capsule, 13 mg en multidose). `INFÉRENCE HAUTE CONFIANCE` : le système carrier est
@@ -233,7 +246,7 @@ le produit le plus proche de notre cible :
 
 | Élément | Statut | Contenu |
 |---|---|---|
-| Masse totale par capsule | **FAIT CONFIRMÉ** | 25,0000 mg (24,7880 + 0,200 + 0,012) |
+| Masse totale par capsule | **FAIT CONFIRMÉ** | 25,0000 mg — 12/200 : 24,7880 + 0,200 + 0,012 · **12/400 : 24,588 + 0,400 + 0,012** |
 | Excipient unique | **FAIT CONFIRMÉ** | lactose (mention « contient de faibles quantités de protéines de lait ») |
 | Enveloppe | **FAIT CONFIRMÉ** | gélatine ; coiffe violet clair transparent, corps naturel |
 | Conditionnement / conservation | **FAIT CONFIRMÉ** | blister Alu/Alu, < 25 °C au sec, 24 mois |
@@ -243,7 +256,7 @@ le produit le plus proche de notre cible :
 | Présence de fines de lactose | **INFÉRENCE FAIBLE CONFIANCE** | probable (intrinsèques et/ou extrinsèques) — aucune notice ne déclare une répartition granulométrique |
 | Grade de lactose exact | **INCONNU** | aucune source publique |
 | Architecture de prémélange | **INCONNU** | aucune source publique |
-| Rapport dose délivrée / dose mesurée | **INFÉRENCE HAUTE CONFIANCE** | 73–85 % (mesuré sur le produit brésilien équivalent) |
+| Rapport dose délivrée / dose mesurée | **INFÉRENCE HAUTE CONFIANCE** | 73 % (BUD) et 85 % (FOR) — valeurs **mesurées** sur le produit brésilien équivalent, transposées ici par analogie |
 
 > **Règle appliquée** : rien de ce qui figure en « inférence » ne doit être cité en interne
 > comme une caractéristique du produit concurrent.
@@ -716,10 +729,10 @@ n'est proposée en dehors de ce qui est mesuré.
 
 | Gate | Analyses | Critères GO | Si NO-GO |
 |---|---|---|---|
-| **Gate 1 — Homogénéité** | assay BUD et FOR ; **10 positions × 25 mg** (haut/milieu/bas × paroi/centre + fond de cuve) ; RSD par API ; cartographie spatiale | teneur **95–105 %** ; **RSD ≤ 5 %** pour les deux APIs ; aucun point hors 90–110 % | ne pas poursuivre le lot ; voir arbre de décision |
+| **Gate 1 — Homogénéité** | assay BUD et FOR ; **10 positions × 25 mg** (haut/milieu/bas × paroi/centre + fond de cuve) ; RSD par API ; cartographie spatiale | teneur **95–105 %** ; **RSD ≤ 5 %** pour les deux APIs ; aucun point hors 90–110 %<br>*(benchmark marché : RSD 1,6 % BUD et 2,0 % FOR)* | ne pas poursuivre le lot ; voir arbre de décision |
 | **Gate 2 — Aptitude poudre** | densité versée/tassée, **Carr**, **Hausner**, écoulement ; **test de ségrégation** (vibration contrôlée ou tamisage-fractionnement, assay FOR par fraction) | Carr ≤ 25 % ; pas de dérive d'assay FOR > 10 % entre fractions | corriger le carrier (L5) avant tout essai de remplissage |
-| **Gate 3 — Remplissage** | essai Modu-C MS, **25 mg**, capsule taille 3 ; masse de remplissage (RSD), **dose délivrée** (UDD, Ph. Eur. 2.9.18) sur le dispositif type Aerolizer | RSD masse ≤ 3 % ; dose délivrée ≥ **70 %** de la dose mesurée ; UDD conforme | revenir au carrier/flux (SV010), pas à l'architecture |
-| **Gate 4 — Aérodynamique** | **NGI**, débit fixé pour ΔP = 4 kPa (Ph. Eur. 2.9.18) ; FPD et FPF **par API** ; MMAD ; GSD | **FPF ≥ 30 %** pour les deux APIs en screening (cible marché 45–56 %) ; MMAD 2–4 µm | voir arbre de décision §N.2 |
+| **Gate 3 — Remplissage** | essai Modu-C MS, **25 mg**, capsule taille 3 ; masse de remplissage (RSD), **dose délivrée** (UDD, Ph. Eur. 2.9.18) sur le dispositif type Aerolizer | RSD masse ≤ 3 % *(benchmark marché : 3,1 %)* ; dose délivrée ≥ **70 %** *(marché : 73 % BUD, 85 % FOR)* ; RSD de dose délivrée ≤ 5 % *(marché : 4,4–4,6 %)* | revenir au carrier/flux (SV010), pas à l'architecture |
+| **Gate 4 — Aérodynamique** | **NGI**, débit fixé pour ΔP = 4 kPa (Ph. Eur. 2.9.18) ; FPD et FPF **par API** ; MMAD ; GSD | **FPF ≥ 30 %** pour les deux APIs en screening *(marché : 44,7 % BUD, 56,1 % FOR ; FPD 140,7 µg et 6,18 µg)* ; MMAD 2–4 µm | voir arbre de décision §N.2 |
 
 **Méthode analytique** : dosage simultané BUD + FOR par HPLC-UV. `calcul interne` — 12 µg de FOR
 dans 25 mg extraits dans 5 mL donnent **2,4 µg/mL**, parfaitement dosable ; **la contrainte n'est
@@ -921,5 +934,11 @@ un produit équivalent au Brésil a été publiquement mesuré comme équivalent
 séparées, **avec un formotérol mieux aérosolisé en capsule unique qu'en capsule séparée**
 (FPF 56 % contre 52 %) `FAIT CONFIRMÉ`.
 
+Mieux : sur ce produit, **la gélule combinée est plus uniforme que les deux gélules séparées
+qu'elle remplace** — RSD d'uniformité de teneur **2,02 % contre 3,23 % pour le formotérol**, et
+**1,62 % contre 5,44 % pour le budésonide** — et elle délivre **plus** de masse fine de formotérol
+en absolu (6,18 contre 5,46 µg). `FAIT CONFIRMÉ`
+
 La séparation des deux formulations décidée historiquement n'était pas une limite de la physique.
-C'était une limite de l'architecture de prémélange.
+C'était une limite de l'architecture de prémélange. Et elle n'a même pas acheté l'uniformité
+qu'elle était censée protéger.

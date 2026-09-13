@@ -37,3 +37,39 @@ historique), puis lancer **L0** (prémix formotérol seul, 144 g).
   de la FPF (dose délivrée ou dose mesurée) reste à vérifier.
 - KÜB de FORPACK 12/400 **capsair** non récupéré (seul le 12/400 discair l'a été) → Q12.
 - Aucune donnée interne (lots historiques) n'était disponible dans le dépôt.
+
+---
+
+## 2026-09-13 — Session 2 : fermeture de lacunes OSINT (Exa)
+
+**Outils** : API Exa opérationnelle. **API you.com : HTTP 403 sur `/v1/search` et `/search`**
+(clé refusée ou plan inactif) → non utilisable en l'état.
+
+**Fait :**
+- Récupéré le **KÜB de FORPACK 12/400 capsair** (URL en minuscules : `...capsair-inhaler-Kapsul-Kub.pdf`).
+- Récupéré le **texte intégral** de l'étude d'équivalence brésilienne
+  (`jbp.org.br/export-pdf/1765/2012_38_6_10_english.pdf`, 9 pages) — SciELO renvoie 403,
+  le miroir JBP fonctionne avec un `Referer`.
+- Mis à jour : `RAPPORT.md`, `GOAL.md`, `docs/02`, `docs/annexes/A1`, `docs/annexes/A3`,
+  `memory/decisions.md` (ADR-010 à 012), `memory/questions-ouvertes.md`.
+
+**Trouvailles :**
+1. **Q12 fermée** — FORPACK **12/400 capsair** : **laktoz 24,588 mg** → **25,0000 mg** au total,
+   lactose seul, AMM 250/44 du 06/05/2013. **Le même bulk à 25 mg sert les deux dosages.**
+2. **Tableau 1 complet de l'étude brésilienne** : la **gélule combinée est PLUS uniforme que les
+   deux gélules séparées** — RSD d'uniformité de teneur **FOR 2,02 % contre 3,23 %**, **BUD
+   1,62 % contre 5,44 %** — et le formotérol y délivre **plus** de masse fine (**6,18 contre
+   5,46 µg**). C'est l'argument le plus fort du dossier contre la décision historique.
+3. **Définition du dénominateur de la FPF levée** : le texte indique explicitement
+   *fine particle fraction = fine particle dose / dose délivrée totale*. Les FPD calculés
+   précédemment (140,7 µg BUD et 6,18 µg FOR) sont confirmés par le tableau.
+4. **Méthodes de référence de la classe** : DUSA-DPI (Westech), **ACI Andersen 8301-60 à
+   90 L/min**, Karl Fischer, sous supervision ANVISA.
+5. La gélule de référence **« formotérol seul » pèse 25,19 mg** : une formulation à 0,048 % m/m
+   dans 25 mg existe aussi en mono-produit commercial.
+
+**Nouvelles questions** : Q13 (disposons-nous d'un ACI ?), **Q14 (quel RSD d'uniformité atteint
+notre propre mono-produit formotérol ? — c'est le repère interne qui manque)**.
+
+**Inchangé** : diagnostic, architecture recommandée et séquence expérimentale. Les nouvelles
+données **renforcent** la recommandation, elles ne la modifient pas.

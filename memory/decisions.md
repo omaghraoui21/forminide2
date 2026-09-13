@@ -92,3 +92,46 @@ en la citant.
 - **Décision** : elles ne sont **pas** écrites dans le dépôt ; usage en variable d'environnement
   uniquement.
 - **Réversibilité** : sans objet.
+
+## ADR-010 — Les critères d'acceptation sont ancrés sur un benchmark de marché, pas sur une convention
+
+- **Date** : 2026-09-13 (session 2) · **Statut** : ACTIVE
+- **Contexte** : les critères de Gate 1 à 4 avaient été fixés par convention (RSD ≤ 5 %,
+  FPF ≥ 30 %). Le texte intégral de l'étude d'équivalence brésilienne fournit désormais les
+  valeurs **mesurées sur un produit commercial équivalent**, sous supervision de l'ANVISA.
+- **Décision** : conserver les seuils de phase (prudents) mais **afficher systématiquement le
+  repère marché à côté** : RSD d'uniformité de teneur **1,62 % (BUD) / 2,02 % (FOR)** ; RSD de
+  masse de gélule **3,09 %** ; RSD de dose délivrée **4,40 / 4,59 %** ; dose délivrée
+  **73 % / 85 %** ; FPF **44,7 % / 56,1 %** ; FPD **140,7 µg / 6,18 µg**.
+- **Raison** : un seuil conventionnel ne dit pas si l'on est bon ; un repère mesuré, oui. Un RSD
+  formotérol de 4,5 % « passe » notre critère tout en étant **deux fois pire que le marché**.
+- **Conséquence** : un lot qui passe les gates mais reste loin du repère n'est pas un succès,
+  c'est un candidat à optimiser. Voir `docs/annexes/A3-plan-analytique.md` §4 bis.
+- **Réversibilité** : totale.
+
+## ADR-011 — La stratégie « un seul bulk, deux dosages » est confirmée par le marché
+
+- **Date** : 2026-09-13 (session 2) · **Statut** : ACTIVE
+- **Contexte** : la question restait ouverte de savoir s'il fallait deux architectures distinctes
+  pour le 12/200 et le 12/400.
+- **Décision** : une seule architecture de bulk, deux dosages obtenus par simple échange
+  budésonide ↔ lactose.
+- **Raison** : `FAIT CONFIRMÉ` — FORPACK capsair déclare **24,7880 mg** de lactose en 12/200 et
+  **24,588 mg** en 12/400, soit **25,0000 mg dans les deux cas**, avec le lactose pour seul
+  excipient et le même device. Le même industriel fait donc exactement cela.
+- **Conséquence** : le lot **L7 (12/200)** n'a plus à démontrer une architecture, seulement que
+  la charge de budésonide plus faible (0,800 % au lieu de 1,600 %) reste homogène.
+- **Réversibilité** : élevée.
+
+## ADR-012 — L'argument de clôture du débat interne est l'uniformité, pas seulement la FPF
+
+- **Date** : 2026-09-13 (session 2) · **Statut** : ACTIVE
+- **Contexte** : le site a séparé les deux formulations pour protéger l'uniformité.
+- **Décision** : opposer à cette décision historique la donnée mesurée, et non un raisonnement.
+- **Raison** : `FAIT CONFIRMÉ` — sur produits commerciaux, la **gélule combinée est plus
+  uniforme que les deux gélules séparées** qu'elle remplace : RSD d'uniformité de teneur
+  **2,02 % contre 3,23 %** pour le formotérol et **1,62 % contre 5,44 %** pour le budésonide ;
+  et le formotérol y délivre **plus** de masse fine (6,18 contre 5,46 µg).
+- **Conséquence** : la séparation historique n'a pas acheté l'uniformité qu'elle devait protéger.
+  L'échec est donc imputable à l'architecture de prémélange, pas au principe de la combinaison.
+- **Réversibilité** : sans objet (constat).

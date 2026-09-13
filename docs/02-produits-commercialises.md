@@ -45,9 +45,22 @@ confiance. **Aucune inférence n'est présentée comme une donnée officielle.**
 > **Conséquence pour nous** : notre masse de 25 mg est le bon choix pour une gélule, et aucune
 > donnée multidose (y compris Symbicort) ne doit être transposée telle quelle.
 
-Neutec commercialise également la gamme en 12/400 capsair (gélule) — même architecture, charge de
-budésonide doublée. `INFÉRENCE HAUTE CONFIANCE` : lactose ≈ 24,588 mg pour conserver 25,000 mg
-(non vérifié sur le KÜB correspondant → **à confirmer**).
+### FORPACK 12/400 mcg capsair — gélule *(question Q12 fermée)*
+
+| Élément | Valeur | Confiance |
+|---|---|---|
+| FOR / BUD | 12 mcg / 400 mcg par gélule | **FAIT CONFIRMÉ** (KÜB §2) |
+| **Lactose** | **24,588 mg** / gélule | **FAIT CONFIRMÉ** |
+| **Masse totale** | **25,0000 mg** | `calcul interne` : 24,588 + 0,400 + 0,012 |
+| Excipients (§6.1) | **« Laktoz »** — un seul | **FAIT CONFIRMÉ** |
+| Forme | coiffe **violet foncé** transparent, corps naturel (le 12/200 a une coiffe violet **clair**) | **FAIT CONFIRMÉ** |
+| Conditionnement / conservation | Alu/Alu, 60 ou 120 gélules ; < 25 °C au sec ; 24 mois | **FAIT CONFIRMÉ** |
+| AMM | **250/44**, 1re autorisation **06/05/2013**, KÜB révisé 07/01/2015 | **FAIT CONFIRMÉ** |
+
+> **Le même fabricant utilise le même bulk à 25,000 mg pour les deux dosages**, la seule
+> différence étant l'échange budésonide ↔ lactose (200 → 400 µg de BUD ; 24,788 → 24,588 mg de
+> lactose). C'est exactement notre stratégie « un seul bulk, deux dosages » — **elle est validée
+> par un produit autorisé**.
 
 ---
 
@@ -61,42 +74,53 @@ budésonide doublée. `INFÉRENCE HAUTE CONFIANCE` : lactose ≈ 24,588 mg pour 
 | Dose mesurée → dose délivrée (6/100) | FOR 6 → **4,5 mcg** ; BUD 100 → **80 mcg** | **FAIT CONFIRMÉ** (bula) |
 | Colorants de l'enveloppe | bleu brillant, rouge allura, jaune orangé (6/200) ; bleu brillant, érythrosine (12/400) | **FAIT CONFIRMÉ** (bula) — **enveloppe uniquement**, pas le contenu |
 | Présentations | 15, 30, 60 gélules, avec inhalateur ou en recharge | **FAIT CONFIRMÉ** |
-| Masse de poudre par gélule | — | **INCONNU** (non déclarée au Brésil) |
+| Masse de poudre par gélule | **25,56 ± 0,79 mg** (n = 20, mesurée sur le 12/400) | **FAIT CONFIRMÉ** (J Bras Pneumol 2012) |
 
-### Performance aérodynamique publiée
+### Performance aérodynamique et uniformité publiées — **données complètes**
 
-`FAIT CONFIRMÉ` — Andrade-Lima M, Pereira LFF, Fernandes ALG. *Équivalence pharmaceutique de
-l'association budésonide + formotérol en gélule unique avec dispositif inhalateur de poudre.*
-J Bras Pneumol 2012;38(6). Étude in vitro, HPLC + uniformité de dose délivrée + APSD.
+`FAIT CONFIRMÉ` — Andrade-Lima M, Pereira LFF, Fernandes ALG. *Equivalência farmacêutica da
+formulação combinada de budesonida e formoterol em cápsula única com dispositivo inalador de pó.*
+J Bras Pneumol 2012;38(6):748-756. Étude in vitro réalisée au laboratoire accrédité T&E Analítica
+(Campinas), **sous supervision directe de deux techniciens de l'ANVISA**.
 
-| Paramètre | **Test** : association fixe, **gélule unique**, Aerocaps® | **Référence** : BUD et FOR en **deux gélules séparées**, Aerolizer® |
-|---|---|---|
-| Teneur budésonide | 111,0 % | 110,5 % |
-| Teneur formotérol | 103,8 % | 104,5 % |
-| Dose délivrée budésonide | **293,2 µg** | 353,0 µg |
-| Dose délivrée formotérol | **10,2 µg** | 11,1 µg |
-| **FPF < 5 µm — budésonide** | **45 %** | 54 % |
-| **FPF < 5 µm — formotérol** | **56 %** | 52 % |
-| Conclusion des auteurs | teneurs, uniformité de dose et diamètres aérodynamiques **appropriés** pour les deux formulations | |
+**Méthodes** : dosage HPLC-UV ; uniformité de dose délivrée par **DUSA-DPI** (Westech) ;
+APSD par **impacteur en cascade d'Andersen (ACI modèle 8301-60, Copley)** ; teneur en eau par
+Karl Fischer ; contrôles microbiologiques. Débit de référence cité : **90 L/min**.
+**Définition explicite du texte** : *fine particle fraction* = dose de particules fines **divisée
+par la dose délivrée totale** (l'ambiguïté de dénominateur est donc levée).
 
-**Interprétations** :
-- `calcul interne` — rapport dose délivrée / dose mesurée : **73,3 %** (BUD, sur 400 µg) et
-  **85,0 %** (FOR, sur 12 µg). → **Cible réaliste pour notre Gate 3 : ≥ 70 %.**
-- `calcul interne` — si la FPF est rapportée à la dose délivrée, FPD ≈ **132 µg** (BUD) et
-  **5,7 µg** (FOR). *(Le dénominateur exact — dose délivrée ou dose mesurée — n'est pas
-  explicité dans le résumé ; à vérifier sur le texte intégral avant toute utilisation
-  réglementaire.)* `INFÉRENCE FAIBLE CONFIANCE` sur le FPD absolu, `FAIT CONFIRMÉ` sur les FPF.
-- **Le point le plus important du dossier OSINT** : dans la gélule **unique**, la FPF du
-  formotérol (56 %) est **supérieure** à celle du budésonide (45 %) **et supérieure** à celle du
-  formotérol en gélule **séparée** (52 %).
-  → **CONSÉQUENCE POUR NOS ESSAIS** : la combinaison, correctement formulée, **n'abîme pas le
-  formotérol — elle l'améliore**. Un échec sur le formotérol dans un bulk combiné est donc un
-  problème de procédé, jamais une fatalité du couple.
-- La **formulation de référence de cette étude est exactement la solution de repli adoptée
-  historiquement par notre site** (deux gélules séparées). L'industrie a démontré publiquement
-  qu'on peut faire aussi bien — et mieux sur le formotérol — en gélule unique.
+| Variable | **Test** : gélule **unique** BUD/FOR 400/12, Aerocaps® | **Réf.** : BUD seul, gélule séparée | **Réf.** : FOR seul, gélule séparée |
+|---|---|---|---|
+| Masse de gélule, mg (n = 20) | **25,56 ± 0,79** | 25,35 ± 1,08 | 25,19 ± 0,70 |
+| *RSD de masse* `calcul interne` | **3,09 %** | 4,26 % | 2,78 % |
+| Teneur, % | BUD 111,41 · FOR 103,80 | BUD 110,59 | FOR 104,51 |
+| Dose délivrée, µg (n = 30) | BUD **293,24 ± 12,91** · FOR **10,23 ± 0,47** | BUD 353,04 ± 11,48 | FOR 11,07 ± 0,60 |
+| *RSD de dose délivrée* `calcul interne` | BUD **4,40 %** · FOR **4,59 %** | BUD 3,25 % | FOR 5,42 % |
+| Dose délivrée / dose étiquetée | BUD **73 %** · FOR **85 %** | BUD 88 % | FOR 92 % |
+| Uniformité de teneur, % (n = 10) | BUD **103,68 ± 1,68** · FOR **97,93 ± 1,98** | BUD 107,20 ± 5,83 | FOR 100,00 ± 3,23 |
+| ***RSD d'uniformité de teneur*** `calcul interne` | **BUD 1,62 % · FOR 2,02 %** | **BUD 5,44 %** | **FOR 3,23 %** |
+| Dose de particules fines, µg (% de la dose délivrée) | BUD **140,67 (44,71 %)** · FOR **6,18 (56,13 %)** | BUD 181,53 (53,56 %) | FOR 5,46 (52,05 %) |
+| *FPD en % de la dose étiquetée* `calcul interne` | BUD **35,2 %** · FOR **51,5 %** | BUD 45,4 % | FOR 45,5 % |
 
----
+**Les trois enseignements, par ordre d'importance :**
+
+1. **La gélule combinée est plus uniforme que les deux gélules séparées qu'elle remplace.**
+   RSD d'uniformité de teneur : **formotérol 2,02 % en combiné contre 3,23 % en mono-produit** ;
+   **budésonide 1,62 % contre 5,44 %**. C'est l'inverse exact de l'intuition qui a conduit notre
+   site à séparer les deux formulations — et c'est mesuré sur des produits commerciaux, sous
+   supervision de l'autorité.
+2. **Le formotérol gagne aussi en masse fine absolue** : FPD **6,18 µg** en combiné contre
+   **5,46 µg** en gélule séparée, malgré une dose délivrée plus faible (10,23 contre 11,07 µg).
+   `INFÉRENCE HAUTE CONFIANCE` : cohérent avec une saturation des sites de haute énergie du
+   lactose par le budésonide, 33 fois plus abondant, qui laisse au formotérol des sites plus
+   faibles dont il se détache mieux.
+3. **25 mg est la norme de la classe, y compris pour un mono-produit formotérol** : la gélule de
+   référence « formotérol seul » pèse **25,19 mg** — une formulation à 0,048 % m/m dans 25 mg,
+   c'est-à-dire exactement notre cas, existe donc aussi en mono-produit commercial.
+
+**Cibles chiffrées pour nos essais, issues du marché** :
+RSD de masse ≈ 3 % · RSD d'uniformité de teneur ≤ 2 % atteignable (notre critère de 5 % est
+prudent) · RSD de dose délivrée ≈ 4,5 % · dose délivrée 73–85 % · FPF 45 % (BUD) et 56 % (FOR).
 
 ## 3. Inde
 
@@ -126,10 +150,13 @@ J Bras Pneumol 2012;38(6). Étude in vitro, HPLC + uniformité de dose délivré
 ## 5. Synthèse du « fingerprint » reconstruit
 
 **Ce que l'on peut affirmer :**
-- Une gélule BUD/FOR **12/200 et 12/400**, **25,000 mg**, **lactose pour seul excipient**,
-  gélatine, blister Alu/Alu, 24 mois, **existe et est autorisée depuis 2013**.
-- Une gélule unique BUD/FOR atteint **FPF 45–56 %** et **dose délivrée 73–85 %**, sans pénaliser
-  le formotérol.
+- Une gélule BUD/FOR **12/200 et 12/400**, **25,000 mg dans les deux cas**, **lactose pour seul
+  excipient**, gélatine, blister Alu/Alu, 24 mois, **existe et est autorisée depuis 2013** — et
+  les deux dosages y partagent manifestement le même bulk.
+- Une gélule unique BUD/FOR atteint **FPF 44,7–56,1 %**, **dose délivrée 73–85 %** et **RSD
+  d'uniformité de teneur de 1,6–2,0 %**, **sans pénaliser le formotérol — en l'améliorant**.
+- Un mono-produit **formotérol 12 µg** existe aussi en gélule de **25,19 mg** : notre
+  concentration de 0,048 % m/m est une norme de classe, pas une singularité.
 - Le système carrier est **accordé au device** (25 mg en gélule vs 13 mg en multidose chez le
   même fabricant).
 

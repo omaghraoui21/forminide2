@@ -28,8 +28,8 @@ La phase est terminée quand les huit livrables suivants existent **et sont docu
 | G4 | Décision tamisage | par étape (lactose / prémix FOR / prémix BUD / intermédiaire / bulk) |
 | G5 | Temps & énergie de mélange rationnels | issus d'une cinétique mesurée, pas d'une habitude |
 | G6 | Taille de lot R&D justifiée | représentativité démontrée (taux de remplissage, pas seulement la masse) |
-| G7 | Bulk homogène | **RSD ≤ 5 %** sur 10 points à l'échelle de la dose unitaire (25 mg), **pour les DEUX APIs**, teneur 95–105 % |
-| G8 | Performance aérodynamique prometteuse | **FPF ≥ 30 %** et **fraction délivrée ≥ 70 %** pour les deux APIs à l'échelle bulk→capsule (cible de référence marché : FPF 45–56 %, DD 73–85 % — voir §4) |
+| G7 | Bulk homogène | **RSD ≤ 5 %** sur 10 points à l'échelle de la dose unitaire (25 mg), **pour les DEUX APIs**, teneur 95–105 % *(benchmark marché : 1,6 % BUD, 2,0 % FOR)* |
+| G8 | Performance aérodynamique prometteuse | **FPF ≥ 30 %** et **fraction délivrée ≥ 70 %** pour les deux APIs à l'échelle bulk→capsule *(benchmark marché : FPF 44,7 % BUD et 56,1 % FOR ; dose délivrée 73 % et 85 % — voir §4)* |
 
 ## 3. Ce qui n'est PAS l'objectif de cette phase
 
@@ -40,19 +40,25 @@ La phase est terminée quand les huit livrables suivants existent **et sont docu
 
 ## 4. Références de performance visées (benchmark public, produit équivalent)
 
-`FAIT CONFIRMÉ` — Andrade-Lima, Pereira & Fernandes, *J Bras Pneumol* 2012;38(6), équivalence
-pharmaceutique d'une association fixe BUD/FOR **en capsule unique** (Aerocaps®) vs deux capsules
-séparées (Aerolizer®) :
+`FAIT CONFIRMÉ` — Andrade-Lima, Pereira & Fernandes, *J Bras Pneumol* 2012;38(6):748-756,
+équivalence pharmaceutique d'une association fixe BUD/FOR 400/12 **en gélule unique** (Aerocaps®)
+vs **deux gélules séparées** (Aerolizer®). Essais sous supervision ANVISA, impacteur d'Andersen.
 
-| Paramètre | Capsule unique (test) | Deux capsules (référence) |
+| Paramètre | Gélule unique (test) | Deux gélules séparées (référence) |
 |---|---|---|
-| Teneur BUD / FOR | 111,0 % / 103,8 % | 110,5 % / 104,5 % |
-| Dose délivrée BUD / FOR | 293,2 µg / 10,2 µg | 353,0 µg / 11,1 µg |
-| FPF < 5 µm BUD / FOR | 45 % / 56 % | 54 % / 52 % |
+| Masse de gélule (n = 20) | 25,56 ± 0,79 mg | BUD 25,35 ± 1,08 · FOR 25,19 ± 0,70 mg |
+| Teneur BUD / FOR | 111,4 % / 103,8 % | 110,6 % / 104,5 % |
+| Dose délivrée BUD / FOR | 293,2 µg (73 %) / 10,2 µg (85 %) | 353,0 µg (88 %) / 11,1 µg (92 %) |
+| **RSD uniformité de teneur BUD / FOR** | **1,62 % / 2,02 %** | 5,44 % / 3,23 % |
+| RSD dose délivrée BUD / FOR | 4,40 % / 4,59 % | 3,25 % / 5,42 % |
+| **FPF < 5 µm BUD / FOR** | **44,7 % / 56,1 %** | 53,6 % / 52,1 % |
+| Dose de particules fines BUD / FOR | 140,7 µg / **6,18 µg** | 181,5 µg / 5,46 µg |
 
-**Lecture directrice** : dans un produit commercial en capsule unique, le **formotérol n'est pas
-pénalisé par la présence du budésonide** (FPF FOR 56 % > FPF BUD 45 %). L'échec historique maison
-n'est donc **pas** une fatalité physico-chimique du couple BUD/FOR.
+**Lecture directrice** : dans un produit commercial en gélule unique, le **formotérol n'est pas
+pénalisé par la présence du budésonide** — il y est **mieux** aérosolisé (FPF 56,1 % contre 52,1 %
+en gélule séparée, FPD 6,18 contre 5,46 µg) **et mieux uniforme** (RSD 2,02 % contre 3,23 %).
+L'échec historique maison n'est donc **pas** une fatalité physico-chimique du couple BUD/FOR ;
+et la séparation des deux formulations n'achète même pas l'uniformité qu'elle était censée protéger.
 
 ## 5. Critères d'arrêt (kill criteria) — à quel moment on renonce
 

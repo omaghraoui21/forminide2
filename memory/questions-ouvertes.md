@@ -13,9 +13,16 @@ Statut : ⬜ ouverte · 🟡 en cours · ✅ résolue (dater et renseigner la r�
 | **Q7** | Configuration exacte du Russell : type d'agitateur, débit, matériau, pertes typiques | décisions de tamisage, bilan matière | Production | moyenne | ⬜ |
 | **Q8** | Liberté d'exploitation sur EP3175842A1 et US11642475 (antériorité d'usage interne ?) | une éventuelle revendication — **pas** le développement | Conseil PI | moyenne | ⬜ |
 | **Q9** | Teneur en eau et surface spécifique BET des trois grades de lactose ; conditions de stockage | stabilité 24 mois, cohésion | Achats / DFE | basse | ⬜ |
-| **Q10** | Référence exacte du dispositif type Aerolizer disponible (RS01 modèle ?) et sa **résistance** | débit de test NGI pour ΔP = 4 kPa | R&D / device | moyenne — **avant Gate 4** | ⬜ |
+| **Q10** | Référence exacte du dispositif type Aerolizer disponible (RS01 modèle ?) et sa **résistance** | débit de test NGI pour ΔP = 4 kPa | R&D / device | moyenne — **avant Gate 4** | 🟡 *repère acquis : l'étude d'équivalence de référence de la classe utilise un ACI à **90 L/min** ; reste à mesurer la résistance de NOTRE dispositif* |
 | **Q11** | Le budésonide est un mélange d'épimères 22R/22S — que fait la méthode HPLC (somme, pic unique) ? | validité de tous les assays | Labo | moyenne — **avant L0** | ⬜ |
-| **Q12** | Confirmation du lactose déclaré pour FORPACK **12/400 capsair** (gélule) | complète le fingerprint OSINT ; non bloquant | R&D | basse | ⬜ |
+| ~~**Q12**~~ | ~~Lactose déclaré pour FORPACK 12/400 capsair~~ | — | — | — | ✅ **2026-09-13 — FERMÉE** : KÜB, **laktoz 24,588 mg**, total **25,0000 mg**, AMM 250/44. Le même bulk à 25 mg sert les deux dosages. |
 
 **Règle** : aucune de ces questions n'empêche de lancer **L0, L1 et L2**, sauf **Q2** (titre du
 formotérol) et **Q11** (méthode), indispensables avant toute pesée et tout dosage.
+
+## Questions ajoutées le 2026-09-13 (session 2)
+
+| # | Question | Bloque | Propriétaire | Criticité | Statut |
+|---|---|---|---|---|---|
+| **Q13** | Disposons-nous d'un **impacteur d'Andersen (ACI)** en plus du NGI ? L'étude de référence de la classe est en ACI à 90 L/min | comparabilité directe de nos résultats au benchmark marché | Labo | basse | ⬜ |
+| **Q14** | Le mono-produit **formotérol** maison pèse-t-il lui aussi ~25 mg par gélule, et quel RSD d'uniformité de teneur atteint-il ? | c'est **notre propre repère interne** : s'il est à ~3 %, le combiné doit viser ≤ 3 %, pas 5 % | R&D / AQ | **haute** | ⬜ |

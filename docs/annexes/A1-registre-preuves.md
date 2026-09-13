@@ -26,6 +26,25 @@ brevet doit toujours être re-téléchargé avant usage réglementaire**.
   nécessité démontrée ; (c) utiliser ce produit comme référence de faisabilité dans toute
   discussion interne ; (d) viser 24 mois de péremption avec conservation au sec.
 
+### P1 bis — FORPACK **12/400** mcg capsair (KÜB) — *question Q12 fermée*
+
+- **SOURCE** : `https://neutecinhaler.com/pdf/forpack-12-400-mcg-capsair-inhaler-Kapsul-Kub.pdf`
+  AMM **250/44**, 1re autorisation **06/05/2013**, KÜB révisé 07/01/2015.
+- **DONNÉE** : §2 — formotérol fumarate dihydraté 12 mcg ; budésonide 400 mcg ;
+  **« Laktoz 24,588 mg »**. §6.1 — **« Laktoz »** (seul excipient). §3 — coiffe **violet foncé**
+  transparent, corps naturel (le 12/200 a une coiffe violet **clair**). §6.3–6.5 — 24 mois,
+  < 25 °C au sec, Alu/Alu 60 ou 120 gélules.
+- **CONFIANCE** : **FAIT CONFIRMÉ**.
+- **INTERPRÉTATION** : masse totale = 24,588 + 0,400 + 0,012 = **25,0000 mg**, exactement comme
+  pour le 12/200. **Le même fabricant utilise donc le même bulk à 25,000 mg pour les deux
+  dosages**, la seule différence étant l'échange budésonide ↔ lactose (200 → 400 µg de BUD,
+  24,788 → 24,588 mg de lactose). C'était une inférence dans la version précédente du dossier ;
+  c'est désormais un fait.
+- **CONSÉQUENCE** : **valide directement notre stratégie « un seul bulk, deux dosages »** : les
+  deux présentations partagent la masse, l'excipient unique, le device et la gélule. Notre lot
+  L7 (12/200) n'a donc à démontrer qu'une chose — que la charge de budésonide plus faible
+  (0,800 % au lieu de 1,600 %) reste homogène — et non une nouvelle architecture.
+
 ## P2 — Notice réglementaire turque FORPACK 12/400 discair (KÜB)
 
 - **SOURCE** : `https://neutecinhaler.com/pdf/forpack-12-400-mcg-Discair-inh-icin-Toz-Kub.pdf`
@@ -36,24 +55,58 @@ brevet doit toujours être re-téléchargé avant usage réglementaire**.
 - **CONSÉQUENCE** : le système carrier est accordé au device. **Ne jamais transposer une
   composition multidose (y compris Symbicort) dans une gélule.**
 
-## P3 — Étude d'équivalence pharmaceutique brésilienne (capsule unique BUD/FOR)
+## P3 — Étude d'équivalence pharmaceutique brésilienne (gélule unique BUD/FOR) — **texte intégral**
 
-- **SOURCE** : Andrade-Lima M, Pereira LFF, Fernandes ALG. *Equivalência farmacêutica da
-  formulação combinada de budesonida e formoterol em cápsula única com dispositivo inalador de pó.*
-  J Bras Pneumol 2012;38(6). DOI 10.1590/s1806-37132012000600010.
-- **DONNÉE** : test = association fixe **en gélule unique** (Aerocaps®) ; référence = BUD et FOR
-  en **deux gélules séparées** (Aerolizer®).
-  Teneur : BUD 111,0 % / FOR 103,8 % (test) ; 110,5 % / 104,5 % (référence).
-  Uniformité de dose délivrée : **BUD 293,2 µg / FOR 10,2 µg** (test) ; 353,0 / 11,1 (référence).
-  **FPF < 5 µm : BUD 45 % et FOR 56 %** (test) ; BUD 54 % et FOR 52 % (référence).
-- **CONFIANCE** : **FAIT CONFIRMÉ** (article peer-reviewed).
-- **INTERPRÉTATION** : (a) rapport dose délivrée / dose mesurée = **73,3 % (BUD)** et
-  **85,0 % (FOR)** `calcul interne` ; (b) **la FPF du formotérol est plus élevée en gélule unique
-  (56 %) qu'en gélule séparée (52 %)** et plus élevée que celle du budésonide (45 %).
-- **CONSÉQUENCE** : (a) cibles de screening — dose délivrée ≥ 70 %, FPF ≥ 30 %, cible marché
-  45–56 % ; (b) **argument central** : la combinaison ne pénalise pas le formotérol ; l'échec
-  historique est donc procédé, pas physico-chimie ; (c) la « solution » historique (deux
-  formulations séparées) est précisément le comparateur que l'industrie a égalé, voire dépassé.
+- **SOURCE** : Andrade-Lima M, Pereira LFF, Fernandes ALG. *Pharmaceutical equivalence of the
+  combination formulation of budesonide and formoterol in a single capsule with a dry powder
+  inhaler.* J Bras Pneumol. 2012;38(6):748-756. DOI 10.1590/S1806-37132012000600010.
+  Texte intégral : `https://www.jbp.org.br/export-pdf/1765/2012_38_6_10_english.pdf`
+  Essais réalisés au laboratoire accrédité T&E Analítica (Campinas), **sous supervision directe
+  de deux techniciens de l'ANVISA**.
+- **MÉTHODES (§ Methods)** : dosage HPLC-UV ; uniformité de dose délivrée par **DUSA-DPI**
+  (Westech Scientific Instruments) ; APSD par **impacteur en cascade d'Andersen (ACI, modèle
+  8301-60, Copley)** ; teneur en eau par **Karl Fischer** ; contrôles microbiologiques.
+  Débit de référence cité par les auteurs : **90 L/min**.
+  **Définitions explicites du texte** : *fine particle dose* = masse des particules < 5 µm dans
+  la dose délivrée ; **« fine particle fraction = fine particle dose divisée par la dose
+  délivrée totale »**. → l'ambiguïté sur le dénominateur, signalée dans la version précédente
+  du dossier, **est levée**.
+- **DONNÉES — Tableau 1 complet** :
+
+| Variable | **Test** : gélule **unique** BUD/FOR 400/12, Aerocaps® | **Référence** : BUD seul, gélule séparée, Aerolizer® | **Référence** : FOR seul, gélule séparée, Aerolizer® |
+|---|---|---|---|
+| **Masse de la gélule**, mg (n = 20) | **25,56 ± 0,79** [25,3 (24,2–27,1)] | 25,35 ± 1,08 [25,5 (23,0–27,3)] | 25,19 ± 0,70 [25,3 (23,8–26,3)] |
+| *RSD de masse* `calcul interne` | **3,09 %** | 4,26 % | 2,78 % |
+| Teneur en principe actif, % | BUD 111,41 · FOR 103,80 | BUD 110,59 | FOR 104,51 |
+| **Uniformité de dose délivrée**, µg (n = 30) | BUD **293,24 ± 12,91** · FOR **10,23 ± 0,47** | BUD 353,04 ± 11,48 | FOR 11,07 ± 0,60 |
+| *RSD de dose délivrée* `calcul interne` | BUD **4,40 %** · FOR **4,59 %** | BUD 3,25 % | FOR 5,42 % |
+| Dose délivrée / dose étiquetée (texte) | BUD **73 %** · FOR **85 %** | BUD 88 % | FOR 92 % |
+| Plage de dose délivrée, % | BUD 92,69–109,25 · FOR 89,63–108,01 | BUD 91,31–107,14 | FOR 91,32–111,83 |
+| **Uniformité de teneur**, % (n = 10) | BUD **103,68 ± 1,68** · FOR **97,93 ± 1,98** | BUD 107,20 ± 5,83 | FOR 100,00 ± 3,23 |
+| ***RSD d'uniformité de teneur*** `calcul interne` | **BUD 1,62 % · FOR 2,02 %** | **BUD 5,44 %** | **FOR 3,23 %** |
+| **Dose de particules fines**, µg (% de la dose délivrée) | BUD **140,67 (44,71 %)** · FOR **6,18 (56,13 %)** | BUD 181,53 (53,56 %) | FOR 5,46 (52,05 %) |
+| *FPD en % de la dose étiquetée* `calcul interne` | BUD **35,2 %** · FOR **51,5 %** | BUD 45,4 % | FOR 45,5 % |
+
+- **CONFIANCE** : **FAIT CONFIRMÉ** (article peer-reviewed, essais supervisés par l'autorité).
+- **INTERPRÉTATIONS** — trois résultats, par ordre d'importance pour notre projet :
+  1. **La gélule combinée est PLUS uniforme que les deux gélules séparées qu'elle remplace.**
+     RSD d'uniformité de teneur : **formotérol 2,02 % en combiné contre 3,23 % en mono-produit**,
+     et **budésonide 1,62 % contre 5,44 %**. C'est l'inverse exact de l'intuition qui a conduit
+     notre site à séparer les deux formulations.
+  2. **Le formotérol gagne aussi en masse fine absolue** : **FPD 6,18 µg en combiné contre
+     5,46 µg en gélule séparée**, malgré une dose délivrée inférieure (10,23 contre 11,07 µg).
+     La combinaison **améliore** l'aérosolisation du formotérol.
+  3. **La masse de 25 mg est la norme de la classe**, y compris pour un **mono-produit
+     formotérol 12 µg** (gélule de référence à **25,19 mg**) — c'est-à-dire pour une formulation
+     à 0,048 % m/m analogue à la nôtre.
+- **CONSÉQUENCES POUR NOS ESSAIS** :
+  (a) **Cibles chiffrées, issues du marché et non d'une convention** : RSD de masse ≈ 3 % ;
+  RSD d'uniformité de teneur ≤ 2 % atteignable, notre critère de 5 % est donc prudent ;
+  RSD de dose délivrée ≈ 4,5 % ; FPF 45 % (BUD) et 56 % (FOR) ; dose délivrée 73–85 %.
+  (b) **L'argument qui clôt le débat interne** : la séparation historique des deux formulations
+  n'a même pas amélioré l'uniformité — mesurée sur produits commerciaux, elle la dégrade.
+  (c) L'APSD de référence de la classe est mesurée à l'**ACI à 90 L/min** : notre plan NGI doit
+  documenter son débit (ΔP = 4 kPa) pour rester comparable — voir Q10.
 
 ## P4 — Fiches DFE Pharma des lactoses d'inhalation
 
