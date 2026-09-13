@@ -181,7 +181,7 @@ Détail complet, marché par marché : `docs/02-produits-commercialises.md`.
 
 | Produit | Marché | Titulaire | Forme | Dosages | Masse poudre | Excipients | Device |
 |---|---|---|---|---|---|---|---|
-| **FORPACK capsair** | Turquie | Neutec İnhaler | capsule gélatine | **12/200**, 12/400 µg | **25,000 mg** (lactose **24,7880 mg**) | **lactose seul** | Capsair (mono-dose à perforation) |
+| **FORPACK capsair** | Turquie | Neutec İnhaler | capsule gélatine | **12/200** et 12/400 µg | **25,000 mg** pour le 12/200 (lactose **24,7880 mg**) ; non vérifié pour le 12/400 | **lactose seul** | Capsair (mono-dose à perforation) |
 | **FORPACK discair** | Turquie | Neutec İnhaler | poudre multidose | 12/400 µg | **13,000 mg** (lactose **12,5880 mg**) | lactose seul | Discair |
 | **ALENIA** | Brésil | Biosintética (Aché) | capsule | 6/100, 6/200, **12/400** µg | non déclarée | lactose monohydraté | Aerocaps® |
 | **FORACORT Rotacaps** | Inde | Cipla | capsule | 6/100, 6/200, 6/400 µg | non déclarée | lactose | Rotahaler |
