@@ -1,0 +1,11 @@
+# Données brutes et fichiers de travail
+*.tmp
+*.bak
+.DS_Store
+__pycache__/
+*.pyc
+
+# Jamais de secrets dans ce dépôt (cf. CLAUDE.md §6)
+.env
+*.key
+secrets*
